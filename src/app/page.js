@@ -1,65 +1,132 @@
-import Image from "next/image";
+import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className={styles.main}>
+      <header className={styles.header}>
+        <div className="container">
+           <div className={`glass ${styles.headerInner}`}>
+             <div className={styles.logo}>ConsultorSEO<span className={styles.accent}>SP</span></div>
+             <nav className={styles.nav}>
+               <a href="#services">Serviços</a>
+               <a href="#sobre">Sobre nós</a>
+               <a href="#porque-nos">Porquê nós</a>
+               <a href="https://wa.me/5511918738164?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20SEO!" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Fale conosco</a>
+             </nav>
+           </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </header>
+
+      <section className={styles.hero}>
+        <div className={styles.heroBg}></div>
+        <div className={`container ${styles.heroContent}`}>
+          <span className={styles.heroSubtitle}>SEO & Branding por Sérgio Melo</span>
+          <h1 className={styles.heroTitle}>Somos uma agência de<br/><span className="gradient-text">SEO e BRANDING</span></h1>
+          <p className={styles.heroText}>Expanda os negócios da sua marca. Aumente seu tráfego e visibilidade online com serviços de SEO premium.</p>
+          <div className={styles.heroActions}>
+            <a href="https://wa.me/5511918738164?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20SEO!" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Vamos aparecer?</a>
+            <a href="#services" className="btn btn-outline">Nossos Serviços</a>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section id="services" className={styles.services}>
+        <div className="container">
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>Nossos Serviços</h2>
+            <p className={styles.heroText}>Aumente o tráfego do seu site e conquiste mais visibilidade online online com serviços de ponta.</p>
+          </div>
+          <div className={styles.servicesGrid}>
+             <div className={styles.serviceCard}>
+                <div className={styles.serviceIcon}>🔍</div>
+                <h3 className={styles.serviceTitle}>Consultoria SEO</h3>
+                <p className={styles.serviceDesc}>Tenha maior visibilidade online com serviços de SEO altamente eficazes para sua empresa.</p>
+             </div>
+             <div className={styles.serviceCard}>
+                <div className={styles.serviceIcon}>📊</div>
+                <h3 className={styles.serviceTitle}>Auditoria de site</h3>
+                <p className={styles.serviceDesc}>Analise técnica de mercado e concorrentes para o seu site se posicionar melhor nos rankings.</p>
+             </div>
+             <div className={styles.serviceCard}>
+                <div className={styles.serviceIcon}>✍️</div>
+                <h3 className={styles.serviceTitle}>Blogging</h3>
+                <p className={styles.serviceDesc}>Criamos artigos otimizados perfeitamente para a palavra-chave que você deseja posicionar.</p>
+             </div>
+             <div className={styles.serviceCard}>
+                <div className={styles.serviceIcon}>📍</div>
+                <h3 className={styles.serviceTitle}>Google Local</h3>
+                <p className={styles.serviceDesc}>Apareça na frente dos concorrentes no Google Maps localmente e seja conhecido na sua região.</p>
+             </div>
+             <div className={styles.serviceCard}>
+                <div className={styles.serviceIcon}>✨</div>
+                <h3 className={styles.serviceTitle}>Branding</h3>
+                <p className={styles.serviceDesc}>Fazemos sua marca se fixar por todo o Google e se posicionar de maneira sólida e memorável.</p>
+             </div>
+             <div className={styles.serviceCard}>
+                <div className={styles.serviceIcon}>💻</div>
+                <h3 className={styles.serviceTitle}>Desenvolvimento Web</h3>
+                <p className={styles.serviceDesc}>Seu site precisa impressionar seus visitantes em poucos segundos. Otimizamos cada interação.</p>
+             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" className={styles.about}>
+        <div className="container">
+          <div className={styles.aboutGrid}>
+            <div>
+              <h2 className={styles.sectionTitle}>Expanda seus negócios com nossa agência</h2>
+              <p className={styles.serviceDesc} style={{fontSize: '1.2rem', lineHeight: '1.8'}}>Há mais de 10 anos, a ConsultoriaSEO ajuda empresas a atingirem seus objetivos de marca. Ao longo dos anos, trabalhamos com pessoas, empresas, indústrias e startups inovadoras.</p>
+              <br/>
+              <p className={styles.serviceDesc} style={{fontSize: '1.2rem', lineHeight: '1.8'}}>Ajudamos marcas ambiciosas como a sua a gerar mais resultado, aumentando o reconhecimento da marca, impulsionando o tráfego e alavancando suas vendas em geral.</p>
+            </div>
+            <div>
+              <blockquote className={styles.aboutQuote}>
+                "Tudo começou ajudando pessoas e empresas a se posicionar no Google e Maps de forma genuína, e as sementes que plantamos me trouxeram até aqui."
+                <span className={styles.aboutAuthor}>— Sérgio Melo</span>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="porque-nos" className={styles.services} style={{background: 'var(--surface)'}}>
+        <div className="container">
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>Porquê nos ecolher</h2>
+            <p className={styles.heroText}>O que nos torna uma agência excepcional no mercado.</p>
+          </div>
+          <div className={styles.servicesGrid}>
+            <div className={styles.serviceCard} style={{background: 'var(--bg-color)'}}>
+               <h3 className={styles.serviceTitle}>❤️ Paixão no trabalho</h3>
+               <p className={styles.serviceDesc}>Amamos ver sua empresa chegar onde nem se imagina. Essa dedicação move todo o nosso projeto.</p>
+            </div>
+            <div className={styles.serviceCard} style={{background: 'var(--bg-color)'}}>
+               <h3 className={styles.serviceTitle}>🏆 Professional</h3>
+               <p className={styles.serviceDesc}>Trabalhamos duro para lhe fazer ser conhecido no longo prazo, priorizando técnicas robustas.</p>
+            </div>
+            <div className={styles.serviceCard} style={{background: 'var(--bg-color)'}}>
+               <h3 className={styles.serviceTitle}>📈 Análise de mercado</h3>
+               <p className={styles.serviceDesc}>Cruzamos dados de produtos e volume de busca para ter precisão em cada decisão tomada.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" className={styles.services} style={{textAlign: 'center', padding: '12rem 0', position: 'relative'}}>
+        <div className="container" style={{position: 'relative', zIndex: 10}}>
+          <h2 className={styles.sectionTitle} style={{fontSize: '4.5rem', marginBottom: '1.5rem'}}>Quer posicionar seu site!</h2>
+          <p className={styles.heroText} style={{marginBottom: '3rem', fontSize: '1.5rem'}}>Dê o primeiro passo para o sucesso digital e aumente seu faturamento.</p>
+          <a href="https://wa.me/5511918738164?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20SEO!" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{transform: 'scale(1.2)'}}>Fale com Sérgio Melo</a>
+        </div>
+      </section>
+
+      <footer className={styles.footer}>
+        <div className="container">
+          <div className={styles.logo}>ConsultorSEO<span className={styles.accent}>SP</span></div>
+          <p className={styles.footerText}>© {new Date().getFullYear()} Consultor SEO SP - Desenvolvido para Sérgio Melo. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+    </main>
   );
 }

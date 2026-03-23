@@ -1,0 +1,240 @@
+.main {
+  min-height: 100vh;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  padding: 1.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.headerInner {
+  border-radius: 99px;
+  padding: 1rem 2rem;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.accent {
+  color: var(--primary);
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav a {
+  font-weight: 600;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.nav a:hover:not(.btn) {
+  opacity: 1;
+  color: var(--primary);
+}
+
+.nav .btn {
+  opacity: 1;
+}
+
+.hero {
+  padding: 14rem 0 8rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroBg {
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(79,70,229,0.15) 0%, rgba(15,23,42,0) 70%);
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: 0;
+  animation: pulse 4s infinite alternate ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.1); opacity: 1; }
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heroSubtitle {
+  color: var(--secondary);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 0.5rem 1.5rem;
+  border-radius: 99px;
+}
+
+.heroTitle {
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.heroText {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroActions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Services */
+.services {
+  padding: 8rem 0;
+  position: relative;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.serviceCard {
+  padding: 3rem;
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.serviceCard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, rgba(79,70,229,0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-10px);
+  border-color: rgba(79,70,229,0.3);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.serviceCard:hover::before {
+  opacity: 1;
+}
+
+.serviceIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: rgba(79,70,229,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.serviceTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.serviceDesc {
+  color: var(--text-muted);
+}
+
+/* About Section */
+.about {
+  padding: 8rem 0;
+  background: linear-gradient(to bottom, transparent, rgba(30, 41, 59, 0.4), transparent);
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.aboutQuote {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: var(--text-main);
+  border-left: 4px solid var(--primary);
+  padding-left: 2rem;
+  margin: 3rem 0;
+  line-height: 1.5;
+}
+
+.aboutAuthor {
+  font-weight: 700;
+  color: var(--secondary);
+  display: block;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+/* Footer */
+.footer {
+  padding: 4rem 0 2rem;
+  background: var(--surface);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  text-align: center;
+}
+
+.footerText {
+  color: var(--text-muted);
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
