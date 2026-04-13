@@ -1,61 +1,80 @@
+.articleContainer {
+  background-color: #0c0e14;
+  min-height: 100vh;
+}
+
 .articleContent {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 40px 20px;
-  color: #334155;
-  line-height: 1.6;
+  padding: 60px 20px;
+  color: #e2e8f0;
+  line-height: 1.8;
+  font-family: var(--font-body);
+}
+
+.heroWrapper {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  box-shadow: 0 0 30px rgba(37, 99, 235, 0.2);
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .articleContent h1 {
-  font-size: 2.5rem;
-  color: #0f172a;
-  margin-bottom: 2rem;
-  font-weight: 700;
+  font-size: 3rem;
+  color: #f8fafc;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  background: linear-gradient(90deg, #60a5fa, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .articleContent h2 {
-  font-size: 1.8rem;
-  color: #1e293b;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.articleContent h3 {
-  font-size: 1.4rem;
-  color: #334155;
-  margin-top: 1.5rem;
-  margin-bottom: 0.8rem;
-}
-
-.articleContent p {
+  font-size: 2rem;
+  color: #93c5fd;
+  margin-top: 3rem;
   margin-bottom: 1.2rem;
-}
-
-.articleContent strong {
-  color: #0f172a;
+  border-left: 4px solid #3b82f6;
+  padding-left: 20px;
 }
 
 .ctaSection {
-  margin-top: 3rem;
-  padding: 2.5rem;
-  background-color: #f8fafc;
-  border-radius: 12px;
+  margin-top: 4rem;
+  padding: 3rem;
+  background: #1e293b;
+  border-radius: 20px;
   text-align: center;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #334155;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
 }
 
 .ctaButton {
   display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.8rem 1.5rem;
-  background-color: #2563eb;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
   color: white;
   text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: background-color 0.2s;
+  border-radius: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.ctaButton:hover {
-  background-color: #1d4ed8;
+.backLinkWrapper {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.backLink {
+  color: #94a3b8;
+  text-decoration: none;
 }
