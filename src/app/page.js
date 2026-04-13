@@ -10,7 +10,7 @@ export default function Home() {
              <nav className={styles.nav}>
                <a href="#services">Serviços</a>
                <a href="#sobre">Sobre nós</a>
-               <a href="#porque-nos">Porquê nós</a>
+               <a href="#artigos">Artigos</a>
                <a href="https://wa.me/5511918738164?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20SEO!" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Fale conosco</a>
              </nav>
            </div>
@@ -90,25 +90,29 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="porque-nos" className={styles.services} style={{background: 'var(--surface)'}}>
+      <section id="artigos" className={styles.services} style={{background: 'var(--surface)'}}>
         <div className="container">
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Porquê nos ecolher</h2>
-            <p className={styles.heroText}>O que nos torna uma agência excepcional no mercado.</p>
+            <h2 className={styles.sectionTitle}>Conteúdo e Estratégia</h2>
+            <p className={styles.heroText}>Acompanhe as últimas tendências de SEO Local e Geotagging.</p>
           </div>
-          <div className={styles.servicesGrid}>
-            <div className={styles.serviceCard} style={{background: 'var(--bg-color)'}}>
-               <h3 className={styles.serviceTitle}>❤️ Paixão no trabalho</h3>
-               <p className={styles.serviceDesc}>Amamos ver sua empresa chegar onde nem se imagina. Essa dedicação move todo o nosso projeto.</p>
-            </div>
-            <div className={styles.serviceCard} style={{background: 'var(--bg-color)'}}>
-               <h3 className={styles.serviceTitle}>🏆 Professional</h3>
-               <p className={styles.serviceDesc}>Trabalhamos duro para lhe fazer ser conhecido no longo prazo, priorizando técnicas robustas.</p>
-            </div>
-            <div className={styles.serviceCard} style={{background: 'var(--bg-color)'}}>
-               <h3 className={styles.serviceTitle}>📈 Análise de mercado</h3>
-               <p className={styles.serviceDesc}>Cruzamos dados de produtos e volume de busca para ter precisão em cada decisão tomada.</p>
-            </div>
+          <div className={styles.articlesGrid}>
+            <a href="/artigos/geosetter-o-guia-definitivo-de-geotagging-para-seo-local-em-sao-paulo" className={styles.articleCard}>
+              <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/geosetter-seo-local.png)'}}></div>
+              <div className={styles.articleInfo}>
+                <span className={styles.articleTag}>SEO LOCAL</span>
+                <h3 className={styles.articleTitle}>GeoSetter: O Guia Definitivo de Geotagging</h3>
+                <p className={styles.articleExcerpt}>Descubra como dominar o Google Maps em SP usando metadados geográficos.</p>
+              </div>
+            </a>
+            <a href="/artigos/como-uma-consultoria-seo-em-sao-paulo-pode-transformar-seu-negocio" className={styles.articleCard}>
+              <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/consultoria-seo-hero.png)'}}></div>
+              <div className={styles.articleInfo}>
+                <span className={styles.articleTag}>CONSULTORIA</span>
+                <h3 className={styles.articleTitle}>Transforme seu Negócio com SEO em SP</h3>
+                <p className={styles.articleExcerpt}>Estratégias fotorrealistas e futuristas para dominar o tráfego orgânico.</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
