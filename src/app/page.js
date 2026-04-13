@@ -113,6 +113,70 @@ export default function Home() {
                 <p className={styles.articleExcerpt}>Estratégias fotorrealistas e futuristas para dominar o tráfego orgânico.</p>
               </div>
             </a>
+            <a href="/artigos/marketing-digital-sp-o-guia-completo-de-seo-para-2026" className={styles.articleCard}>
+              <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/marketing-digital.png)'}}></div>
+              <div className={styles.articleInfo}>
+                <span className={styles.articleTag}>MARKETING DIGITAL</span>
+                <h3 className={styles.articleTitle}>O Guia Completo de SEO para 2026 em SP</h3>
+                <p className={styles.articleExcerpt}>Prepare-se para o futuro das buscas locais com este guia abrangente de marketing digital.</p>
+              </div>
+            </a>
+            <a href="/artigos/auditoria-seo-gratuita-como-analisar-seu-site-hoje" className={styles.articleCard}>
+              <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/auditoria-seo.png)'}}></div>
+              <div className={styles.articleInfo}>
+                <span className={styles.articleTag}>AUDITORIA</span>
+                <h3 className={styles.articleTitle}>Auditoria SEO: Como Analisar seu Site Hoje</h3>
+                <p className={styles.articleExcerpt}>Descubra gargalos técnicos no seu site e impulsione suas conversões rapidamente.</p>
+              </div>
+            </a>
+            <a href="/artigos/seo-local-em-sao-paulo-estrategias-para-negocios-fisicos" className={styles.articleCard}>
+              <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/seo-local.png)'}}></div>
+              <div className={styles.articleInfo}>
+                <span className={styles.articleTag}>SEO LOCAL</span>
+                <h3 className={styles.articleTitle}>Estratégias de SEO Local para Negócios Físicos</h3>
+                <p className={styles.articleExcerpt}>Aprenda como dominar o Google Maps e atrair clientes do seu bairro em São Paulo.</p>
+              </div>
+            </a>
+            <a href="/artigos/importancia-do-branding-para-o-posicionamento-organico" className={styles.articleCard}>
+              <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/branding-seo.png)'}}></div>
+              <div className={styles.articleInfo}>
+                <span className={styles.articleTag}>BRANDING</span>
+                <h3 className={styles.articleTitle}>Branding e o Posicionamento Orgânico</h3>
+                <p className={styles.articleExcerpt}>Entenda como o reconhecimento de marca eleva o seu SEO e consolida liderança.</p>
+              </div>
+            </a>
+            <a href="/artigos/como-escolher-a-melhor-agencia-de-seo-em-sao-paulo" className={styles.articleCard}>
+              <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/consultoria-seo-hero.png)'}}></div>
+              <div className={styles.articleInfo}>
+                <span className={styles.articleTag}>AGÊNCIA</span>
+                <h3 className={styles.articleTitle}>Como Escolher a Melhor Agência em SP</h3>
+                <p className={styles.articleExcerpt}>Fatores cruciais na hora de decidir os parceiros de crescimento tecnológico.</p>
+              </div>
+            </a>
+            <a href="/artigos/o-impacto-da-velocidade-do-site-no-seu-ranqueamento" className={styles.articleCard}>
+              <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/geosetter-seo-local.png)'}}></div>
+              <div className={styles.articleInfo}>
+                <span className={styles.articleTag}>PERFORMANCE</span>
+                <h3 className={styles.articleTitle}>O Impacto da Velocidade do Site</h3>
+                <p className={styles.articleExcerpt}>Acelere seu site e veja suas vendas crescerem e sua taxa de rejeição despencar.</p>
+              </div>
+            </a>
+            <a href="/artigos/link-building-sustentavel-para-empresas-paulistanas" className={styles.articleCard}>
+              <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/consultoria-seo-hero.png)'}}></div>
+              <div className={styles.articleInfo}>
+                <span className={styles.articleTag}>LINK BUILDING</span>
+                <h3 className={styles.articleTitle}>Link Building Sustentável</h3>
+                <p className={styles.articleExcerpt}>Estratégias sólidas para conquistar autoridade de domínio na região de SP.</p>
+              </div>
+            </a>
+            <a href="/artigos/core-web-vitals-o-que-seu-negocio-em-sp-precisa-saber" className={styles.articleCard}>
+              <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/marketing-digital.png)'}}></div>
+              <div className={styles.articleInfo}>
+                <span className={styles.articleTag}>WEB VITALS</span>
+                <h3 className={styles.articleTitle}>O Que São os Core Web Vitals?</h3>
+                <p className={styles.articleExcerpt}>Métricas essenciais do Google que o seu negócio precisa monitorar hoje.</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
