@@ -1,198 +1,190 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import styles from './page.module.css';
 
 export default function Home() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <main className={styles.main}>
-      <header className={styles.header}>
+      <header className={`${styles.header} ${scrolled ? styles.headerScrolled : ''}`}>
         <div className="container">
            <div className={`glass ${styles.headerInner}`}>
-             <div className={styles.logo}>ConsultorSEO<span className={styles.accent}>SP</span></div>
-             <nav className={styles.nav}>
-               <a href="#services">Serviços</a>
-               <a href="#sobre">Sobre nós</a>
-               <a href="#artigos">Artigos</a>
-               <a href="https://wa.me/5511918738164?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20SEO!" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Fale conosco</a>
-             </nav>
+              <div className={styles.logo}>ConsultorSEO<span className={styles.accent}>SP</span></div>
+              <nav className={styles.nav}>
+                <a href="#services">Serviços</a>
+                <a href="#sobre">Fábrica SEO</a>
+                <a href="#artigos">Artigos</a>
+                <a href="https://wa.me/5511918738164?text=Ol%C3%A1%2C%20Sérgio!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20diagnóstico%20de%20SEO!" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Fale com Sérgio</a>
+              </nav>
            </div>
         </div>
       </header>
 
       <section className={styles.hero}>
-        <div className={styles.heroBg}></div>
-        <div className={`container ${styles.heroContent}`}>
-          <span className={styles.heroSubtitle}>SEO & Branding por Sérgio Melo</span>
-          <h1 className={styles.heroTitle}>Somos uma agência de<br/><span className="gradient-text">SEO e BRANDING</span></h1>
-          <p className={styles.heroText}>Expanda os negócios da sua marca. Aumente seu tráfego e visibilidade online com serviços de SEO premium.</p>
+        <div className="blob" style={{top: '-10%', right: '-5%'}}></div>
+        <div className="blob" style={{bottom: '10%', left: '-5%', background: 'var(--secondary-glow)'}}></div>
+        
+        <div className={`container ${styles.heroContent} animate-fade-in`}>
+          <span className={styles.heroSubtitle}>SEO & Branding de Alta Performance</span>
+          <h1 className={styles.heroTitle}>Domine o Google com<br/><span className="gradient-text">SEO e BRANDING</span></h1>
+          <p className={styles.heroText}>Aceleramos o crescimento da sua marca em São Paulo através de inteligência de busca e posicionamento de mercado estratégico.</p>
           <div className={styles.heroActions}>
-            <a href="https://wa.me/5511918738164?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20SEO!" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Vamos aparecer?</a>
-            <a href="#services" className="btn btn-outline">Nossos Serviços</a>
+            <a href="https://wa.me/5511918738164?text=Ol%C3%A1%2C%20Sérgio!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20diagnóstico%20de%20SEO!" className="btn btn-primary">Quero Resultados</a>
+            <a href="#services" className="btn btn-outline">Ver Serviços</a>
           </div>
         </div>
       </section>
 
       <section id="services" className={styles.services}>
         <div className="container">
-          <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Nossos Serviços</h2>
-            <p className={styles.heroText}>Aumente o tráfego do seu site e conquiste mais visibilidade online online com serviços de ponta.</p>
+          <div className={`${styles.sectionHeader} animate-fade-in`}>
+            <h2 className={styles.sectionTitle}>Nossa Expertise</h2>
+            <p className={styles.heroText}>Soluções completas para empresas que não aceitam nada menos que a primeira página.</p>
           </div>
           <div className={styles.servicesGrid}>
              <div className={styles.serviceCard}>
-                <div className={styles.serviceIcon}>🔍</div>
-                <h3 className={styles.serviceTitle}>Consultoria SEO</h3>
-                <p className={styles.serviceDesc}>Tenha maior visibilidade online com serviços de SEO altamente eficazes para sua empresa.</p>
+                <div className={styles.serviceIcon}>🎯</div>
+                <h3 className={styles.serviceTitle}>Estratégia SEO</h3>
+                <p className={styles.serviceDesc}>Planejamento focado em conversão e autoridade real perante o Google.</p>
              </div>
              <div className={styles.serviceCard}>
-                <div className={styles.serviceIcon}>📊</div>
-                <h3 className={styles.serviceTitle}>Auditoria de site</h3>
-                <p className={styles.serviceDesc}>Analise técnica de mercado e concorrentes para o seu site se posicionar melhor nos rankings.</p>
-             </div>
-             <div className={styles.serviceCard}>
-                <div className={styles.serviceIcon}>✍️</div>
-                <h3 className={styles.serviceTitle}>Blogging</h3>
-                <p className={styles.serviceDesc}>Criamos artigos otimizados perfeitamente para a palavra-chave que você deseja posicionar.</p>
+                <div className={styles.serviceIcon}>⚡</div>
+                <h3 className={styles.serviceTitle}>Performance Web</h3>
+                <p className={styles.serviceDesc}>Otimizamos cada milissegundo. Velocidade que o Google e seus clientes amam.</p>
              </div>
              <div className={styles.serviceCard}>
                 <div className={styles.serviceIcon}>📍</div>
-                <h3 className={styles.serviceTitle}>Google Local</h3>
-                <p className={styles.serviceDesc}>Apareça na frente dos concorrentes no Google Maps localmente e seja conhecido na sua região.</p>
+                <h3 className={styles.serviceTitle}>SEO Local Elite</h3>
+                <p className={styles.serviceDesc}>Domine o Google Maps em SP e seja a escolha número 1 da sua região.</p>
              </div>
              <div className={styles.serviceCard}>
-                <div className={styles.serviceIcon}>✨</div>
-                <h3 className={styles.serviceTitle}>Branding</h3>
-                <p className={styles.serviceDesc}>Fazemos sua marca se fixar por todo o Google e se posicionar de maneira sólida e memorável.</p>
+                <div className={styles.serviceIcon}>💎</div>
+                <h3 className={styles.serviceTitle}>Digital Branding</h3>
+                <p className={styles.serviceDesc}>Posicionamento de marca que transmite confiança e solidez no mercado.</p>
              </div>
              <div className={styles.serviceCard}>
-                <div className={styles.serviceIcon}>💻</div>
-                <h3 className={styles.serviceTitle}>Desenvolvimento Web</h3>
-                <p className={styles.serviceDesc}>Seu site precisa impressionar seus visitantes em poucos segundos. Otimizamos cada interação.</p>
+                <div className={styles.serviceIcon}>📟</div>
+                <h3 className={styles.serviceTitle}>IA Content Factory</h3>
+                <p className={styles.serviceDesc}>Nossa fábrica de conteúdo multi-modelo escala seu SEO em tempo recorde.</p>
+             </div>
+             <div className={styles.serviceCard}>
+                <div className={styles.serviceIcon}>📈</div>
+                <h3 className={styles.serviceTitle}>Auditoria 360º</h3>
+                <p className={styles.serviceDesc}>Identificamos falhas críticas e oportunidades de ouro escondidas no seu site.</p>
              </div>
           </div>
         </div>
       </section>
 
-      <section id="sobre" className={styles.about}>
+      <section id="results" className={styles.services} style={{background: 'linear-gradient(to bottom, var(--bg-color), var(--surface))'}}>
         <div className="container">
-          <div className={styles.aboutGrid}>
+          <div className={styles.aboutGrid} style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center'}}>
             <div>
-              <h2 className={styles.sectionTitle}>Expanda seus negócios com nossa agência</h2>
-              <p className={styles.serviceDesc} style={{fontSize: '1.2rem', lineHeight: '1.8'}}>Há mais de 10 anos, a ConsultoriaSEO ajuda empresas a atingirem seus objetivos de marca. Ao longo dos anos, trabalhamos com pessoas, empresas, indústrias e startups inovadoras.</p>
-              <br/>
-              <p className={styles.serviceDesc} style={{fontSize: '1.2rem', lineHeight: '1.8'}}>Ajudamos marcas ambiciosas como a sua a gerar mais resultado, aumentando o reconhecimento da marca, impulsionando o tráfego e alavancando suas vendas em geral.</p>
+              <h2 className={styles.sectionTitle}>Resultados que escalam negócios</h2>
+              <p className={styles.heroText} style={{marginLeft: 0, textAlign: 'left'}}>Abra mão do marketing de esperança. Usamos dados e tecnologia de ponta para garantir que sua marca seja encontrada por quem realmente quer comprar.</p>
+              <ul style={{listStyle: 'none', marginTop: '2rem'}}>
+                <li style={{marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '1rem'}}>
+                  <span style={{color: 'var(--secondary)', fontSize: '1.5rem'}}>✓</span> +300% de Tráfego Orgânico Médio
+                </li>
+                <li style={{marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '1rem'}}>
+                  <span style={{color: 'var(--secondary)', fontSize: '1.5rem'}}>✓</span> Domínio Total do Google Maps Local
+                </li>
+                <li style={{marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '1rem'}}>
+                  <span style={{color: 'var(--secondary)', fontSize: '1.5rem'}}>✓</span> Autoridade E-E-A-T Inquestionável
+                </li>
+              </ul>
             </div>
-            <div>
-              <blockquote className={styles.aboutQuote}>
-                "Tudo começou ajudando pessoas e empresas a se posicionar no Google e Maps de forma genuína, e as sementes que plantamos me trouxeram até aqui."
-                <span className={styles.aboutAuthor}>— Sérgio Melo</span>
-              </blockquote>
+            <div className={`glass ${styles.serviceCard}`} style={{padding: '4rem', textAlign: 'center'}}>
+               <div style={{fontSize: '4rem', marginBottom: '1rem'}}>🚀</div>
+               <h3 style={{fontSize: '2.5rem', marginBottom: '1rem'}}>Pronto para o Próximo Nível?</h3>
+               <p style={{marginBottom: '2rem'}}>Migramos sua estrutura antiga para o futuro da web hoje.</p>
+               <a href="https://wa.me/5511918738164" className="btn btn-primary">Falar com Especialista</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="artigos" className={styles.services} style={{background: 'var(--surface)'}}>
+      <section id="artigos" className={styles.services}>
         <div className="container">
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Conteúdo e Estratégia</h2>
-            <p className={styles.heroText}>Acompanhe as últimas tendências de SEO Local e Geotagging.</p>
+            <h2 className={styles.sectionTitle}>Insights Estratégicos</h2>
+            <p className={styles.heroText}>Acompanhe as últimas tendências de SEO, Branding e Geotagging em SP.</p>
           </div>
+          
           <div className={styles.articlesGrid}>
+            {/* O Guia Definitivo - Principal */}
             <a href="/artigos/geosetter-o-guia-definitivo-de-geotagging-para-seo-local-em-sao-paulo" className={styles.articleCard}>
               <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/geosetter-seo-local.png)'}}></div>
               <div className={styles.articleInfo}>
                 <span className={styles.articleTag}>SEO LOCAL</span>
                 <h3 className={styles.articleTitle}>GeoSetter: O Guia Definitivo de Geotagging</h3>
-                <p className={styles.articleExcerpt}>Descubra como dominar o Google Maps em SP usando metadados geográficos.</p>
               </div>
             </a>
+
+            {/* Transforme seu Negócio */}
             <a href="/artigos/como-uma-consultoria-seo-em-sao-paulo-pode-transformar-seu-negocio" className={styles.articleCard}>
               <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/consultoria-seo-hero.png)'}}></div>
               <div className={styles.articleInfo}>
                 <span className={styles.articleTag}>CONSULTORIA</span>
                 <h3 className={styles.articleTitle}>Transforme seu Negócio com SEO em SP</h3>
-                <p className={styles.articleExcerpt}>Estratégias fotorrealistas e futuristas para dominar o tráfego orgânico.</p>
               </div>
             </a>
+
+            {/* Marketing Digital 2026 */}
             <a href="/artigos/marketing-digital-sp-o-guia-completo-de-seo-para-2026" className={styles.articleCard}>
               <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/marketing-digital.png)'}}></div>
               <div className={styles.articleInfo}>
                 <span className={styles.articleTag}>MARKETING DIGITAL</span>
-                <h3 className={styles.articleTitle}>O Guia Completo de SEO para 2026 em SP</h3>
-                <p className={styles.articleExcerpt}>Prepare-se para o futuro das buscas locais com este guia abrangente de marketing digital.</p>
+                <h3 className={styles.articleTitle}>Guia Completo de SEO para 2026 em SP</h3>
               </div>
             </a>
+
+            {/* Auditoria SEO */}
             <a href="/artigos/auditoria-seo-gratuita-como-analisar-seu-site-hoje" className={styles.articleCard}>
               <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/auditoria-seo.png)'}}></div>
               <div className={styles.articleInfo}>
                 <span className={styles.articleTag}>AUDITORIA</span>
                 <h3 className={styles.articleTitle}>Auditoria SEO: Como Analisar seu Site Hoje</h3>
-                <p className={styles.articleExcerpt}>Descubra gargalos técnicos no seu site e impulsione suas conversões rapidamente.</p>
               </div>
             </a>
+
+            {/* SEO Local Negócios Físicos */}
             <a href="/artigos/seo-local-em-sao-paulo-estrategias-para-negocios-fisicos" className={styles.articleCard}>
               <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/seo-local.png)'}}></div>
               <div className={styles.articleInfo}>
-                <span className={styles.articleTag}>SEO LOCAL</span>
-                <h3 className={styles.articleTitle}>Estratégias de SEO Local para Negócios Físicos</h3>
-                <p className={styles.articleExcerpt}>Aprenda como dominar o Google Maps e atrair clientes do seu bairro em São Paulo.</p>
+                <span className={styles.articleTag}>MAPS</span>
+                <h3 className={styles.articleTitle}>Estratégias de SEO Local para Negócios</h3>
               </div>
             </a>
+
+            {/* Branding e Posicionamento */}
             <a href="/artigos/importancia-do-branding-para-o-posicionamento-organico" className={styles.articleCard}>
               <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/branding-seo.png)'}}></div>
               <div className={styles.articleInfo}>
                 <span className={styles.articleTag}>BRANDING</span>
-                <h3 className={styles.articleTitle}>Branding e o Posicionamento Orgânico</h3>
-                <p className={styles.articleExcerpt}>Entenda como o reconhecimento de marca eleva o seu SEO e consolida liderança.</p>
-              </div>
-            </a>
-            <a href="/artigos/como-escolher-a-melhor-agencia-de-seo-em-sao-paulo" className={styles.articleCard}>
-              <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/consultoria-seo-hero.png)'}}></div>
-              <div className={styles.articleInfo}>
-                <span className={styles.articleTag}>AGÊNCIA</span>
-                <h3 className={styles.articleTitle}>Como Escolher a Melhor Agência em SP</h3>
-                <p className={styles.articleExcerpt}>Fatores cruciais na hora de decidir os parceiros de crescimento tecnológico.</p>
-              </div>
-            </a>
-            <a href="/artigos/o-impacto-da-velocidade-do-site-no-seu-ranqueamento" className={styles.articleCard}>
-              <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/geosetter-seo-local.png)'}}></div>
-              <div className={styles.articleInfo}>
-                <span className={styles.articleTag}>PERFORMANCE</span>
-                <h3 className={styles.articleTitle}>O Impacto da Velocidade do Site</h3>
-                <p className={styles.articleExcerpt}>Acelere seu site e veja suas vendas crescerem e sua taxa de rejeição despencar.</p>
-              </div>
-            </a>
-            <a href="/artigos/link-building-sustentavel-para-empresas-paulistanas" className={styles.articleCard}>
-              <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/consultoria-seo-hero.png)'}}></div>
-              <div className={styles.articleInfo}>
-                <span className={styles.articleTag}>LINK BUILDING</span>
-                <h3 className={styles.articleTitle}>Link Building Sustentável</h3>
-                <p className={styles.articleExcerpt}>Estratégias sólidas para conquistar autoridade de domínio na região de SP.</p>
-              </div>
-            </a>
-            <a href="/artigos/core-web-vitals-o-que-seu-negocio-em-sp-precisa-saber" className={styles.articleCard}>
-              <div className={styles.articleImage} style={{backgroundImage: 'url(/images/artigos/marketing-digital.png)'}}></div>
-              <div className={styles.articleInfo}>
-                <span className={styles.articleTag}>WEB VITALS</span>
-                <h3 className={styles.articleTitle}>O Que São os Core Web Vitals?</h3>
-                <p className={styles.articleExcerpt}>Métricas essenciais do Google que o seu negócio precisa monitorar hoje.</p>
+                <h3 className={styles.articleTitle}>O Poder do Branding no SEO</h3>
               </div>
             </a>
           </div>
-        </div>
-      </section>
-
-      <section id="contato" className={styles.services} style={{textAlign: 'center', padding: '12rem 0', position: 'relative'}}>
-        <div className="container" style={{position: 'relative', zIndex: 10}}>
-          <h2 className={styles.sectionTitle} style={{fontSize: '4.5rem', marginBottom: '1.5rem'}}>Quer posicionar seu site!</h2>
-          <p className={styles.heroText} style={{marginBottom: '3rem', fontSize: '1.5rem'}}>Dê o primeiro passo para o sucesso digital e aumente seu faturamento.</p>
-          <a href="https://wa.me/5511918738164?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20SEO!" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{transform: 'scale(1.2)'}}>Fale com Sérgio Melo</a>
         </div>
       </section>
 
       <footer className={styles.footer}>
         <div className="container">
           <div className={styles.logo}>ConsultorSEO<span className={styles.accent}>SP</span></div>
-          <p className={styles.footerText}>© {new Date().getFullYear()} Consultor SEO SP - Desenvolvido para Sérgio Melo. Todos os direitos reservados.</p>
+          <p style={{color: 'var(--text-muted)', marginTop: '1rem'}}>Sérgio Melo - Especialista em SEO & Branding</p>
+          <p style={{marginTop: '3rem', fontSize: '0.8rem', opacity: 0.5}}>© {new Date().getFullYear()} Consultor SEO SP. Todos os direitos reservados.</p>
         </div>
       </footer>
     </main>
