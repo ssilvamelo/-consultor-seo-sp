@@ -17,6 +17,11 @@ s3 = boto3.client(
 
 BUCKET = "consultorseosp-hub"
 BASE_DIR = r"C:\Users\User\.gemini\antigravity\scratch\consultorseosp"
+# Arquivos de trabalho NUNCA vao para producao (prefixos)
+WORK_PREFIXES = ("webvip_", "relatorio_", "blog_data", "seo_spider", "optimize_", "connect_all",
+                 "build_", "normalize_", "dossie", "readme", "audit", "deploy_", "generate_",
+                 "inject_", "update_", "fix_", "memoria_", "bios_", "skill", "links do site")
+
 
 # 1. Configurar Website Hosting no S3 com 404.html customizado
 try:
@@ -44,7 +49,8 @@ for root, dirs, files in os.walk(BASE_DIR):
 
     for file in files:
         # Seguranca: nunca enviar scripts python locais ou backups
-        if file.endswith((".py", ".env", ".log", ".bak")):
+        if (file.endswith((".py", ".pyc", ".env", ".log", ".bak")) or file.lower().startswith(WORK_PREFIXES)
+            or (rel_root == "." and (file.endswith(".md") or (file.startswith(".") and file != ".htaccess")))):
             skipped += 1
             continue
 

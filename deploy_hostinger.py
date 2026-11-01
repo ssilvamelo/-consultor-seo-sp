@@ -31,6 +31,11 @@ SKIP_FILES = {
 }
 
 INCLUDE_DIRS = {"agent-md", "cidades", "blog", "css", "js", "assets"}
+# Arquivos de trabalho NUNCA vao para producao (prefixos)
+WORK_PREFIXES = ("webvip_", "relatorio_", "blog_data", "seo_spider", "optimize_", "connect_all",
+                 "build_", "normalize_", "dossie", "readme", "audit", "deploy_", "generate_",
+                 "inject_", "update_", "fix_", "memoria_", "bios_", "skill", "links do site")
+
 
 
 def load_config():
@@ -83,7 +88,7 @@ def get_files_to_deploy():
     # 1. Arquivos na raiz
     for item in os.listdir(BASE_DIR):
         full_path = os.path.join(BASE_DIR, item)
-        if item in SKIP_FILES or item.endswith((".py", ".env", ".log", ".bak", ".zip", ".xlsx", ".pdf", ".md")):
+        if item in SKIP_FILES or item.lower().startswith(WORK_PREFIXES) or item.endswith((".py", ".env", ".log", ".bak", ".zip", ".xlsx", ".pdf", ".md")):
             continue
 
         if os.path.isfile(full_path):
