@@ -107,7 +107,7 @@ def run_deploy():
 
         if os.path.isfile(full_path):
             ext = os.path.splitext(item)[1].lower()
-            if ext == ".txt" and item not in {"robots.txt", "llms.txt"}:
+            if ext == ".txt" and item not in {"robots.txt", "llms.txt", "llms-full.txt"}:
                 continue
             if ext in VALID_EXTS or item == ".htaccess":
                 files_to_deploy[item] = full_path

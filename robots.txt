@@ -17,4 +17,56 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+# BEGIN GEO AI-BOTS
+# Politica GEO: crawlers de IA (busca/citacao e treino) liberados para maximizar visibilidade em respostas generativas.
+# busca/citacao
+User-agent: OAI-SearchBot
+Allow: /
+
+# usuario/citacao
+User-agent: ChatGPT-User
+Allow: /
+
+# usuario/citacao
+User-agent: Perplexity-User
+Allow: /
+
+# busca/citacao
+User-agent: Claude-SearchBot
+Allow: /
+
+# usuario/citacao
+User-agent: Claude-User
+Allow: /
+
+# treino
+User-agent: ClaudeBot
+Allow: /
+
+# busca
+User-agent: Applebot
+Allow: /
+
+# treino (token robots)
+User-agent: Applebot-Extended
+Allow: /
+
+# busca/assistente
+User-agent: Amazonbot
+Allow: /
+
+# treino
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# dataset aberto
+User-agent: CCBot
+Allow: /
+
+# busca/citacao
+User-agent: DuckAssistBot
+Allow: /
+
+# END GEO AI-BOTS
+
 Sitemap: https://consultorseosp.com.br/sitemap.xml

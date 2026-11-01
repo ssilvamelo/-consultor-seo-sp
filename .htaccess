@@ -33,7 +33,7 @@ Options -Indexes
 </FilesMatch>
 
 # Permitir acesso público explícito aos arquivos agênticos e de validação
-<FilesMatch "^(robots\.txt|llms\.txt|humans\.txt|sitemap\.xml)$">
+<FilesMatch "^(robots\.txt|llms\.txt|llms-full\.txt|humans\.txt|sitemap\.xml)$">
   Order allow,deny
   Allow from all
 </FilesMatch>
@@ -74,7 +74,7 @@ Options -Indexes
     Header set X-Robots-Tag "noindex, follow"
   </FilesMatch>
 
-  <FilesMatch "llms\.txt$">
+  <FilesMatch "llms(-full)?\.txt$">
     Header set Content-Type "text/plain; charset=utf-8"
     Header set X-Robots-Tag "index, follow"
   </FilesMatch>
