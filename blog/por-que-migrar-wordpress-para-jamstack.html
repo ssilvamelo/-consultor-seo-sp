@@ -9,8 +9,8 @@
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
   <!-- Favicon & Social -->
-  <link rel="icon" href="../favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta property="og:site_name" content="Consultor SEO SP">
   <meta property="og:title" content="Por Que Migrar do WordPress para Jamstack? Velocidade < 50ms e Segurança">
   <meta property="og:description" content="Descubra as razões técnicas que estão levando empresas de alto padrão a trocar o WordPress por arquitetura Jamstack estática na nuvem. Carregamento em menos de 50ms.">
@@ -22,7 +22,7 @@
 
   <!-- Descoberta de IA -->
   <link rel="describedby" href="https://consultorseosp.com.br/llms.txt">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 
   <script type="application/ld+json">
   {
@@ -70,14 +70,14 @@
 
   <nav class="nav">
     <div class="nav-content">
-      <a href="../index.html" class="logo">
+      <a href="/" class="logo">
         <span class="logo-icon">▲</span>
         <span class="logo-text">Consultor SEO SP</span>
       </a>
       <div class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="../cidades/">Cidades</a>
-        <a href="./">Blog</a>
+        <a href="/">Home</a>
+        <a href="/cidades/">Cidades</a>
+        <a href="/blog/">Blog</a>
         <a href="/#simulador">Simulador</a>
         <a href="/#contato" class="btn btn-primary">Falar com Especialista</a>
       </div>
@@ -95,27 +95,48 @@
     
     <div class="article-content" style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.8;">
       
-    <p>Durante mais de 15 anos, o WordPress foi a solução padrão para criação de sites. Porém, em 2026, a complexidade cumulativa de temas pesados, construtores visuais (Elementor/Divi), dezenas de plugins e consultas repetitivas a bancos de dados MySQL tornou o WordPress um gargalo crônico para o SEO.</p>
+    <p>Durante mais de 15 anos, o WordPress foi a solução padrão para criação de sites. Porém, em 2026, a complexidade cumulativa de temas pesados, plugins de terceiros e consultas contínuas a bancos de dados tornou o CMS tradicional o maior ofensor de velocidade no Core Web Vitals.</p>
 
     <h2 style="color: #fff; margin: 35px 0 15px 0;">1. O Preço dos 3 Segundos de Espera</h2>
-    <p>Dados do Google confirmam que 53% dos visitantes em dispositivos móveis abandonam páginas que demoram mais de 3 segundos para carregar. No modelo Jamstack (JavaScript, APIs e Markup estático pré-compilado), a página não consulta nenhum banco de dados ao ser acessada: ela é servida diretamente pela borda da CDN em <strong>menos de 50 milissegundos</strong>.</p>
-
-    <h2 style="color: #fff; margin: 35px 0 15px 0;">2. Imunidade Absoluta a Invasões e Hackers</h2>
-    <p>A imensa maioria dos ataques cibernéticos em sites corporativos ocorre por falhas conhecidas em plugins desatualizados de WordPress. Em uma infraestrutura Jamstack:</p>
-    <ul>
-      <li>Não há painel `wp-admin` exposto na internet.</li>
-      <li>Não há banco de dados para injeção de SQL.</li>
-      <li>Não há execução de código PHP no servidor suscetível a scripts maliciosos.</li>
-    </ul>
+    <p><strong>A arquitetura Jamstack elimina o tempo de processamento de servidores dinâmicos entregando HTML puro pré-compilado diretamente da borda da CDN com latência de resposta inferior a 50 milissegundos (TTFB < 50ms).</strong></p>
     
-    
-    <div style="background: rgba(15, 23, 42, 0.6); border-left: 4px solid var(--cyan); padding: 20px; margin: 30px 0; border-radius: 0 12px 12px 0;">
-      <h4 style="color: #fff; margin-bottom: 8px;">Planejamento de Migração e Custos:</h4>
-      <p style="margin-bottom: 0; font-size: 0.95rem;">
-        Veja a <a href="quanto-custa-consultor-seo-sp.html" style="color: var(--cyan); text-decoration: underline; font-weight: 600;">tabela real de custos de consultoria de SEO</a> e compare o impacto financeiro de tráfego orgânico versus anúncios pagos em nosso artigo sobre <a href="trafego-pago-vs-seo-b2b.html" style="color: var(--cyan); text-decoration: underline; font-weight: 600;">Tráfego Pago vs SEO no B2B</a>.
-      </p>
+    <div style="overflow-x: auto; margin: 25px 0;">
+      <table style="width: 100%; border-collapse: collapse; text-align: left; background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(0, 240, 255, 0.2); border-radius: 8px;">
+        <thead>
+          <tr style="background: rgba(0, 240, 255, 0.1); border-bottom: 2px solid var(--cyan); color: #fff;">
+            <th style="padding: 12px 16px;">Parâmetro de Engenharia</th>
+            <th style="padding: 12px 16px;">WordPress Tradicional</th>
+            <th style="padding: 12px 16px;">Jamstack Multi-Cloud</th>
+            <th style="padding: 12px 16px;">Vantagem Competitiva</th>
+          </tr>
+        </thead>
+        <tbody style="color: #cbd5e1;">
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+            <td style="padding: 12px 16px;"><strong>Tempo de Resposta (TTFB)</strong></td>
+            <td style="padding: 12px 16px;">650ms a 1.800ms</td>
+            <td style="padding: 12px 16px; color: var(--cyan); font-weight: 600;">18ms a 48ms</td>
+            <td style="padding: 12px 16px;">Até 25x mais rápido</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+            <td style="padding: 12px 16px;"><strong>Vulnerabilidades de Plugins</strong></td>
+            <td style="padding: 12px 16px;">Mais de 1.400 falhas CVE/ano</td>
+            <td style="padding: 12px 16px; color: var(--cyan); font-weight: 600;">0 (Sem PHP e sem DB)</td>
+            <td style="padding: 12px 16px;">Imunidade total a SQLi</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px 16px;"><strong>Nota Core Web Vitals</strong></td>
+            <td style="padding: 12px 16px;">45 a 75 / 100</td>
+            <td style="padding: 12px 16px; color: var(--cyan); font-weight: 600;">98 a 100 / 100</td>
+            <td style="padding: 12px 16px;">Ranqueamento privilegiado</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
+    <h2 style="color: #fff; margin: 35px 0 15px 0;">2. Imunidade Absoluta a Invasões e Hackers</h2>
+    <p><strong>A segurança nativa do Jamstack decorre do desacoplamento total entre o ambiente de compilação e a camada de entrega pública, extinguindo painéis de login como wp-admin e vetores de injeção de scripts.</strong></p>
+    <p>Arquivos HTML, CSS e imagens estáticas são distribuídos em nós globais de CDN, garantindo que o site suporte picos de milhões de visitas simultâneas sem consumir memória RAM nem exigir bancos MySQL.</p>
+    
     </div>
 
     <!-- CTA de Conversão no Final do Artigo -->
@@ -131,7 +152,7 @@
   <footer class="footer">
     <div class="container footer-content">
       <div class="footer-col">
-        <a href="../index.html" class="logo">
+        <a href="/" class="logo">
           <span class="logo-icon">▲</span>
           <span class="logo-text">Consultor SEO SP</span>
         </a>
@@ -141,17 +162,17 @@
       <div class="footer-col">
         <h4>Ecossistema</h4>
         <ul>
-          <li><a href="../index.html">Página Inicial</a></li>
-          <li><a href="../cidades/">Cidades Atendidas em SP</a></li>
-          <li><a href="./">Blog & Artigos Técnicos</a></li>
+          <li><a href="/">Página Inicial</a></li>
+          <li><a href="/cidades/">Cidades Atendidas em SP</a></li>
+          <li><a href="/blog/">Blog & Artigos Técnicos</a></li>
           <li><a href="/llms.txt">Superfície para Agentes (llms.txt)</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Compliance & Multi-Cloud</h4>
         <ul>
-          <li><a href="../privacidade.html">Política de Privacidade</a></li>
-          <li><a href="../termos.html">Termos de Uso</a></li>
+          <li><a href="/privacidade.html">Política de Privacidade</a></li>
+          <li><a href="/termos.html">Termos de Uso</a></li>
           <li><a href="http://consultorseosp-hub.s3-website-sa-east-1.amazonaws.com" target="_blank" rel="noopener">Brand Hub na AWS S3</a></li>
           <li><a href="https://consultorseohub.z15.web.core.windows.net" target="_blank" rel="noopener">Brand Hub na Azure</a></li>
         </ul>

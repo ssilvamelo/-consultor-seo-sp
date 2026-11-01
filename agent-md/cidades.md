@@ -1,34 +1,224 @@
-> Índice completo do site: https://consultorseosp.com.br/llms.txt
+<!-- generated-by: geo_toolkit -->
+# Cidades Atendidas em São Paulo
 
-# Cidades Atendidas em São Paulo | Consultor SEO SP
+> Fonte canônica: https://consultorseosp.com.br/cidades/
+> Conheça as 50 principais cidades atendidas pelo Consultor SEO SP. Estratégias de SEO de alta conversão e automação com agentes autônomos de IA em todo o Estado de São Paulo.
 
-> Diretório regional de atendimento especializado em SEO de alta conversão e agentes de IA para os 50 principais municípios e polos industriais do Estado de São Paulo.
+- [Especialidades](https://consultorseosp.com.br/#especialidades)
+- [Como Funciona](https://consultorseosp.com.br/#metodologia)
+- [Simulador](https://consultorseosp.com.br/#simulador)
+- [FAQ](https://consultorseosp.com.br/#faq)
 
-## Cobertura Regional por Macrorregião
+# Cidades Atendidas em São Paulo
 
-### Grande São Paulo & ABCD
-- [São Paulo (Capital)](https://consultorseosp.com.br/agent-md/sao-paulo.md): Maior centro financeiro, corporativo e tecnológico da América Latina.
-- [Guarulhos](https://consultorseosp.com.br/agent-md/guarulhos.md): Maior hub logístico do Brasil, centros de distribuição e parque industrial.
-- [São Bernardo do Campo](https://consultorseosp.com.br/agent-md/sao-bernardo-do-campo.md): Polo automotivo e indústrias pesadas do Grande ABC.
-- [Santo André](https://consultorseosp.com.br/agent-md/santo-andre.md): Setor metalmecânico, químico e serviços corporativos.
-- [Osasco](https://consultorseosp.com.br/agent-md/osasco.md): Grande polo de fintechs, tecnologia e comércio varejista.
-- [Barueri & Alphaville](https://consultorseosp.com.br/agent-md/barueri-alphaville.md): Hub de sedes multinacionais, tecnologia e centros de serviços.
-- [São Caetano do Sul](https://consultorseosp.com.br/agent-md/sao-caetano-do-sul.md): Alto IDH, indústrias de ponta e tecnologia.
+Atendemos presencialmente na Grande São Paulo e remotamente com infraestrutura dedicada em todos os principais polos industriais e comerciais do estado.
 
-### Região Metropolitana de Campinas & Jundiaí
-- [Campinas](https://consultorseosp.com.br/agent-md/campinas.md): Polo de alta tecnologia, biotecnologia, centros de P&D e logística.
-- [Jundiaí](https://consultorseosp.com.br/agent-md/jundiai.md): Corredor logístico Anhanguera/Bandeirantes, multinacionais e e-commerce.
-- [Indaiatuba](https://consultorseosp.com.br/agent-md/indaiatuba.md): Polo industrial diversificado, automotivo e exportação.
-- [Americana](https://consultorseosp.com.br/agent-md/americana.md): Tradicional polo têxtil, metalúrgico e químicos.
+### São Paulo (Capital)
 
-### Vale do Paraíba & Litoral
-- [São José dos Campos](https://consultorseosp.com.br/agent-md/sao-jose-dos-campos.md): Polo aeroespacial (Embraer), automotivo e telecomunicações.
-- [Taubaté](https://consultorseosp.com.br/agent-md/taubate.md): Indústrias automotivas, metalmecânicas e comércio regional.
-- [Santos](https://consultorseosp.com.br/agent-md/santos.md): Maior porto da América Latina, comércio exterior, logística aduaneira e turismo.
+maior centro financeiro, corporativo e tecnológico da América Latina...
 
-### Interior (Ribeirão Preto & Sorocaba)
-- [Ribeirão Preto](https://consultorseosp.com.br/agent-md/ribeirao-preto.md): Capital nacional do agronegócio e polo médico/farmacêutico.
-- [Sorocaba](https://consultorseosp.com.br/agent-md/sorocaba.md): Parque industrial metalmecânico, automotivo e centros logísticos.
+Região Metropolitana de Campinas (RMC)
 
----
-Fonte: https://consultorseosp.com.br/cidades/ | Atualizado: 2026-10-28
+### Campinas
+
+polo de tecnologia, biotecnologia, centros de pesquisa, P&D e logística de alta densidade...
+
+### Guarulhos
+
+maior hub logístico do Brasil, centros de distribuição e forte parque industrial...
+
+### São Bernardo do Campo
+
+polo automotivo, metalúrgico, indústrias pesadas e serviços corporativos B2B...
+
+### Santo André
+
+química, petroquímica, comércio de grande porte e polo médico hospitalar...
+
+### Osasco
+
+hub de fintechs, grandes e-commerces, logística e distribuição de serviços digitais...
+
+### São José dos Campos
+
+polo aeroespacial, automotivo, telecomunicações e engenharia de precisão...
+
+Interior Paulista / Alta Mogiana
+
+### Ribeirão Preto
+
+capital nacional do agronegócio, serviços médicos de excelência, tecnologia e franquias...
+
+Região Metropolitana de Sorocaba
+
+### Sorocaba
+
+polo metalmecânico, indústrias automotivas, multinacionais e comércio regional...
+
+### Santos
+
+maior porto da América Latina, comércio exterior, logística aduaneira e turismo corporativo...
+
+### Barueri (Alphaville)
+
+sede de centenas de multinacionais, empresas de software, SaaS e holdings financeiras...
+
+Aglomeração Urbana de Jundiaí
+
+### Jundiaí
+
+polo logístico e industrial estratégico entre São Paulo e Campinas, alimentos e tecnologia...
+
+### São Caetano do Sul
+
+maior IDH do Brasil, polo automotivo, serviços de alto valor agregado e tecnologia...
+
+### Mauá
+
+polo petroquímico e industrial pesado, metalurgia e transformação de plásticos...
+
+### Diadema
+
+polo de autopeças, cosméticos, química e logística urbana...
+
+### São José do Rio Preto
+
+hub médico hospitalar de excelência, agronegócio e forte setor de comércio e serviços...
+
+### Mogi das Cruzes
+
+cinturão verde agrícola, indústrias químicas, metalúrgicas e comércio regional...
+
+### Piracicaba
+
+capital do setor sucroalcooleiro, biocombustíveis, agritech e parque automotivo...
+
+### Bauru
+
+entroncamento rodoferroviário, centro universitário, odontologia e serviços especializados...
+
+### Franca
+
+capital do calçado masculino de couro, produção de café de alta qualidade e fundições...
+
+### Taubaté
+
+indústrias automotivas, eletroeletrônicos, metalurgia e comércio do Vale...
+
+### Limeira
+
+capital da joia folheada, máquinas industriais, citricultura e agronegócio...
+
+### Suzano
+
+polo de papel e celulose, indústrias químicas, metalurgia e logística...
+
+### Taboão da Serra
+
+polo da indústria farmacêutica, distribuição logística e serviços corporativos...
+
+### Sumaré
+
+indústrias químicas, montadoras de veículos, pneus e grandes centros logísticos...
+
+### Praia Grande
+
+construção civil em forte expansão, comércio varejista e polo de serviços turísticos...
+
+### Guarujá
+
+operações portuárias da margem esquerda, turismo de alto padrão e hotelaria...
+
+### Embu das Artes
+
+grandes condomínios logísticos ao longo do Rodoanel, turismo cultural e serviços...
+
+### São Carlos
+
+capital da tecnologia e inovação, duas universidades públicas de ponta e startups...
+
+### Indaiatuba
+
+parque industrial moderno, indústrias automotivas, multinacionais e logística Viracopos...
+
+### Cotia (Granja Viana)
+
+indústrias químicas, farmacêuticas, condomínios de alto padrão e empresas de serviços B2B...
+
+### Americana
+
+polo têxtil moderno, indústrias químicas, metalurgia e comércio avançado...
+
+### Marília
+
+capital nacional do alimento e confeitos, forte setor de software e serviços médicos...
+
+### Itapevi
+
+um dos maiores polos da indústria farmacêutica do país e condomínios logísticos...
+
+### Araraquara
+
+citricultura, bioenergia, cervejarias, indústria química e têxtil...
+
+### Jacareí
+
+papel e celulose, vidros automotivos, química pesada e logística Dutra...
+
+### Hortolândia
+
+polo de data centers de hiperescala, empresas globais de tecnologia e telecomunicações...
+
+Polo Cerâmico / Centro-Leste
+
+### Rio Claro
+
+polo de revestimentos cerâmicos, bebidas, metalurgia e transportes rodoferroviários...
+
+### Presidente Prudente
+
+capital do agronegócio regional, genética bovina, polo universitário e saúde...
+
+### Araçatuba
+
+bioenergia, usinas sucroalcooleiras, agronegócio e polo comercial regional...
+
+### Santa Bárbara d'Oeste
+
+indústria metalmecânica, têxtil, canavieira e componentes industriais...
+
+### Ferraz de Vasconcelos
+
+indústrias metalmecânicas, estamparia, plásticos e serviços...
+
+### Itapecerica da Serra
+
+indústrias químicas, produtos de limpeza, logística e turismo ecológico...
+
+### Bragança Paulista
+
+polo imobiliário de alto padrão, indústria de autopeças, logística e medicina...
+
+### Itu
+
+indústrias metalúrgicas, montadoras, turismo cultural e condomínios fechados...
+
+### Pindamonhangaba
+
+grande polo siderúrgico, laminação de alumínio e indústrias pesadas...
+
+### Santana de Parnaíba
+
+serviços de tecnologia, condomínios empresariais Alphaville e polos corporativos...
+
+### Valinhos
+
+indústrias de embalagens, papel, metalurgia, química e fruticultura de precisão...
+
+### Mogi Guaçu
+
+papel e celulose, alimentos processados, cerâmica e indústrias mecânicas...
+
+### Atibaia
+
+polo de logística avançada no entroncamento D. Pedro / Fernão Dias e tecnologia...

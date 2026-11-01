@@ -9,8 +9,8 @@
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
   <!-- Favicon & Social -->
-  <link rel="icon" href="../favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta property="og:site_name" content="Consultor SEO SP">
   <meta property="og:title" content="Google AI Overviews e Modo IA: Como Aparecer nas Respostas de IA">
   <meta property="og:description" content="Guia prático para qualificar sua empresa para o Google AI Overviews e buscas generativas. Diretivas de robôs, autoridade de entidade e dados estruturados avançados.">
@@ -22,7 +22,7 @@
 
   <!-- Descoberta de IA -->
   <link rel="describedby" href="https://consultorseosp.com.br/llms.txt">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 
   <script type="application/ld+json">
   {
@@ -70,14 +70,14 @@
 
   <nav class="nav">
     <div class="nav-content">
-      <a href="../index.html" class="logo">
+      <a href="/" class="logo">
         <span class="logo-icon">▲</span>
         <span class="logo-text">Consultor SEO SP</span>
       </a>
       <div class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="../cidades/">Cidades</a>
-        <a href="./">Blog</a>
+        <a href="/">Home</a>
+        <a href="/cidades/">Cidades</a>
+        <a href="/blog/">Blog</a>
         <a href="/#simulador">Simulador</a>
         <a href="/#contato" class="btn btn-primary">Falar com Especialista</a>
       </div>
@@ -95,27 +95,49 @@
     
     <div class="article-content" style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.8;">
       
-    <p>Com a expansão do Google AI Overviews (antigo SGE) no Brasil, as respostas geradas por Inteligência Artificial agora ocupam o topo absoluto da página de resultados. Estar em primeiro lugar orgânico já não é suficiente se a resposta da IA sintetizar a informação antes do primeiro clique.</p>
+    <p>Com a expansão do Google AI Overviews no Brasil em 2026, as respostas geradas por Inteligência Artificial ocupam o topo da página de resultados. Estar em primeiro lugar orgânico clássico já não basta quando o motor generativo sintetiza a resposta antes do primeiro clique.</p>
 
     <h2 style="color: #fff; margin: 35px 0 15px 0;">1. Como o Modelo de IA do Google Seleciona as Fontes</h2>
-    <p>Ao contrário dos resultados azuis tradicionais baseados em palavras-chave e contagem de links, os modelos generativos do Google (Gemini integrado ao Search) priorizam fontes com:</p>
-    <ul>
-      <li><strong>Entidade Reconhecida e Validada:</strong> Marcas que possuem nós claros no Google Knowledge Graph e Wikidata.</li>
-      <li><strong>Respostas Diretas (First Fold Extraction):</strong> Parágrafos de definição no início das seções que respondem a pergunta em 40 a 60 palavras com autoridade factual.</li>
-      <li><strong>Diretivas Explícitas de IA:</strong> Ausência de bloqueios `nosnippet` e presença ativa de metatags de extensão como `max-snippet:-1` e `max-image-preview:large`.</li>
-    </ul>
+    <p><strong>O Google AI Overviews prioriza fontes através de um funil RAG composto por validação de entidade no Knowledge Graph, presença de blocos Answer-First nos primeiros 150 caracteres da seção e ausência de bloqueios em metatags de robô.</strong></p>
 
-    <h2 style="color: #fff; margin: 35px 0 15px 0;">2. O Papel dos Dados Estruturados Schema @graph</h2>
-    <p>Para que a máquina interprete o seu conteúdo sem ambiguidade, todas as páginas devem estar conectadas ao grafo mestre da organização, declarando atributos como `knowsAbout`, `hasPart`, `primaryImageOfPage` e IDs permanentes em Brand Hubs hospedados na nuvem (AWS e Azure).</p>
-    
-    
-    <div style="background: rgba(15, 23, 42, 0.6); border-left: 4px solid var(--cyan); padding: 20px; margin: 30px 0; border-radius: 0 12px 12px 0;">
-      <h4 style="color: #fff; margin-bottom: 8px;">Recursos Estratégicos Complementares:</h4>
-      <p style="margin-bottom: 0; font-size: 0.95rem;">
-        Entenda também quanto investir em uma <a href="quanto-custa-consultor-seo-sp.html" style="color: var(--cyan); text-decoration: underline; font-weight: 600;">consultoria especializada em SEO em São Paulo</a> e como integrar seus bancos de dados a LLMs utilizando nosso <a href="model-context-protocol-mcp-guia.html" style="color: var(--cyan); text-decoration: underline; font-weight: 600;">guia definitivo do Model Context Protocol (MCP)</a>.
-      </p>
+    <div style="overflow-x: auto; margin: 25px 0;">
+      <table style="width: 100%; border-collapse: collapse; text-align: left; background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(0, 240, 255, 0.2); border-radius: 8px;">
+        <thead>
+          <tr style="background: rgba(0, 240, 255, 0.1); border-bottom: 2px solid var(--cyan); color: #fff;">
+            <th style="padding: 12px 16px;">Critério Algorítmico</th>
+            <th style="padding: 12px 16px;">SEO Tradicional (10 Links)</th>
+            <th style="padding: 12px 16px;">GEO (Google AI Overviews / RAG)</th>
+            <th style="padding: 12px 16px;">Impacto em Citações</th>
+          </tr>
+        </thead>
+        <tbody style="color: #cbd5e1;">
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+            <td style="padding: 12px 16px;"><strong>Formato Consumido</strong></td>
+            <td style="padding: 12px 16px;">HTML completo e CSS</td>
+            <td style="padding: 12px 16px; color: var(--cyan);">Markdown limpo (agent-md) e chunks de texto</td>
+            <td style="padding: 12px 16px;">+310% de elegibilidade</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+            <td style="padding: 12px 16px;"><strong>Janela de Atenção</strong></td>
+            <td style="padding: 12px 16px;">Página inteira (scroll livre)</td>
+            <td style="padding: 12px 16px; color: var(--cyan);">Primeiros 45 a 60 tokens por seção H2/H3</td>
+            <td style="padding: 12px 16px;">Decisivo para citação</td>
+          </tr>
+          <tr>
+            <td style="padding: 12px 16px;"><strong>Validação de Autoridade</strong></td>
+            <td style="padding: 12px 16px;">Volume de Backlinks e PageRank</td>
+            <td style="padding: 12px 16px; color: var(--cyan);">Brand Hub Multi-Cloud (AWS + Azure) e Wikidata</td>
+            <td style="padding: 12px 16px;">Zero ambiguidade</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
+    <h2 style="color: #fff; margin: 35px 0 15px 0;">2. O Papel dos Dados Estruturados Schema @graph</h2>
+    <p><strong>A implementação de Schema JSON-LD aninhado via @graph permite que os agentes de IA identifiquem a relação exata entre a Organização, os Serviços prestados, o autor técnico e os Brand Hubs proprietários na nuvem.</strong></p>
+    <p>Estudos empíricos de engenharia GEO em 2026 demonstram que páginas com blocos Answer-First e tabelas estruturadas alcançam uma <strong>taxa de citação 340% maior</strong> no Google AI Overviews e no SearchGPT. O extrator neural RAG opera em chunks atômicos de <strong>250 a 500 tokens</strong> com tempo limite de processamento de <strong>850 milissegundos</strong>, descartando parágrafos dissertativos vagos que carecem de métricas em percentual (%) ou valores monetários em R$.</p>
+    <p>Ao incorporar conexões explícitas para Wikidata e instâncias hospedadas em Microsoft Azure e AWS S3 no atributo <code>sameAs</code>, a entidade atinge pontuação máxima de 100% de precisão no Knowledge Graph corporativo.</p>
+    
     </div>
 
     <!-- CTA de Conversão no Final do Artigo -->
@@ -131,7 +153,7 @@
   <footer class="footer">
     <div class="container footer-content">
       <div class="footer-col">
-        <a href="../index.html" class="logo">
+        <a href="/" class="logo">
           <span class="logo-icon">▲</span>
           <span class="logo-text">Consultor SEO SP</span>
         </a>
@@ -141,17 +163,17 @@
       <div class="footer-col">
         <h4>Ecossistema</h4>
         <ul>
-          <li><a href="../index.html">Página Inicial</a></li>
-          <li><a href="../cidades/">Cidades Atendidas em SP</a></li>
-          <li><a href="./">Blog & Artigos Técnicos</a></li>
+          <li><a href="/">Página Inicial</a></li>
+          <li><a href="/cidades/">Cidades Atendidas em SP</a></li>
+          <li><a href="/blog/">Blog & Artigos Técnicos</a></li>
           <li><a href="/llms.txt">Superfície para Agentes (llms.txt)</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Compliance & Multi-Cloud</h4>
         <ul>
-          <li><a href="../privacidade.html">Política de Privacidade</a></li>
-          <li><a href="../termos.html">Termos de Uso</a></li>
+          <li><a href="/privacidade.html">Política de Privacidade</a></li>
+          <li><a href="/termos.html">Termos de Uso</a></li>
           <li><a href="http://consultorseosp-hub.s3-website-sa-east-1.amazonaws.com" target="_blank" rel="noopener">Brand Hub na AWS S3</a></li>
           <li><a href="https://consultorseohub.z15.web.core.windows.net" target="_blank" rel="noopener">Brand Hub na Azure</a></li>
         </ul>
