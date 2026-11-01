@@ -1,0 +1,108 @@
+# =========================================================================
+# SEGURANÇA MÁXIMA & PERFORMANCE — CONSULTOR SEO SP (consultorseosp.com.br)
+# =========================================================================
+
+# 0. Prioridade Absoluta para o HTML Jamstack de Alta Performance
+DirectoryIndex index.html index.php
+
+# 1. Forçar HTTPS e Canonical www → não-www
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # 1a. Redirecionar www para não-www (301 permanente)
+  RewriteCond %{HTTP_HOST} ^www\.consultorseosp\.com\.br$ [NC]
+  RewriteRule ^(.*)$ https://consultorseosp.com.br/$1 [L,R=301]
+
+  # 1b. Forçar HTTPS (SSL)
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# 2. Desabilitar Listagem de Pastas e Diretórios
+Options -Indexes
+
+# 3. Bloquear Arquivos Ocultos e Arquivos Sensíveis (Backups, Scripts, Env, Logs)
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+<FilesMatch "\.(zip|tar|gz|py|sh|sql|bak|env|log|md_backup|conf)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Permitir acesso público explícito aos arquivos agênticos e de validação
+<FilesMatch "^(robots\.txt|llms\.txt|humans\.txt|sitemap\.xml)$">
+  Order allow,deny
+  Allow from all
+</FilesMatch>
+
+# 4. Headers de Segurança HTTP Oficiais
+<IfModule mod_headers.c>
+  # Previne Clickjacking (Impede iframe malicioso)
+  Header always set X-Frame-Options "SAMEORIGIN"
+  
+  # Bloqueia sniffing de MIME-type
+  Header always set X-Content-Type-Options "nosniff"
+  
+  # Política de Referenciador Segura
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  
+  # HSTS (Força HTTPS em navegadores por 1 ano com preload)
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+  
+  # Permissions Policy: desabilita recursos de hardware não utilizados
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
+</IfModule>
+
+# =========================================================================
+# BEGIN WebVIP Agent Surface v2 (Descoberta & Higiene para IAs e LLMs)
+# =========================================================================
+<IfModule mod_mime.c>
+  AddType "text/markdown; charset=utf-8" .md
+  AddType "text/plain; charset=utf-8" .txt
+</IfModule>
+
+<IfModule mod_headers.c>
+  # 1. Descoberta Automática de Índice por Agentes de IA
+  Header add Link '</llms.txt>; rel="describedby"'
+
+  # 2. Higiene de Headers nos arquivos Markdown (Evita canibalizar o HTML canônico)
+  <FilesMatch "\.md$">
+    Header set Content-Type "text/markdown; charset=utf-8"
+    Header set X-Robots-Tag "noindex, follow"
+  </FilesMatch>
+
+  <FilesMatch "llms\.txt$">
+    Header set Content-Type "text/plain; charset=utf-8"
+    Header set X-Robots-Tag "index, follow"
+  </FilesMatch>
+</IfModule>
+# END WebVIP Agent Surface v2
+
+# 5. Ocultar Assinatura do Servidor Apache
+ServerSignature Off
+
+# 6. Compressão GZIP / Deflate para Carregamento Ultrarrápido
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
+
+# 7. Cache de Navegador para Imagens e Assets Estáticos
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 week"
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType text/markdown "access plus 1 week"
+  ExpiresByType text/plain "access plus 1 week"
+</IfModule>
+
+# 8. Página 404 Personalizada de Alta Conversão
+ErrorDocument 404 /404.html

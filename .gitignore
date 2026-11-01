@@ -1,0 +1,21 @@
+# Arquivos de ambiente e seguranca (NUNCA COMMITAR)
+.env
+.env.*
+!.env.example
+*.bak
+*.tmp
+*.log
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Diretorios locais de auditoria e screenshots
+audit*/
+audit_output/
+dossie.md
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
