@@ -43,46 +43,39 @@
   <!-- Estilos -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Dados Estruturados Schema JSON-LD Master (@graph) -->
+    <!-- Dados Estruturados Schema JSON-LD Master (@graph) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "WebSite",
-        "@id": "https://consultorseosp.com.br/#website",
+        "@type": ["ProfessionalService", "LocalBusiness", "Organization"],
+        "@id": "https://consultorseosp.com.br/#organization",
         "name": "Consultor SEO SP",
-        "alternateName": ["Consultor SEO SP", "consultorseosp.com.br", "Consultor SEO & Agentes de IA"],
+        "alternateName": "Consultor SEO São Paulo — Engenharia Entity-First & GEO",
         "url": "https://consultorseosp.com.br/",
-        "inLanguage": "pt-BR",
-        "publisher": {
-          "@id": "https://consultorseosp.com.br/#organization"
-        }
-      },
-      {
-        "@type": ["LocalBusiness", "ProfessionalService"],
-        "@id": "http://consultorseosp-hub.s3-website-sa-east-1.amazonaws.com/#organization",
-        "name": "Consultor SEO SP",
-        "description": "Consultoria sênior de SEO Semântico, arquitetura Entity-First, modelagem de Knowledge Graph e automação de processos com agentes autônomos de Inteligência Artificial.",
-        "url": "https://consultorseosp.com.br/",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://consultorseosp.com.br/#logo",
+          "url": "https://consultorseosp.com.br/assets/img/consultor-seo-sao-paulo-especialista-inteligencia-artificial.webp",
+          "contentUrl": "https://consultorseosp.com.br/assets/img/consultor-seo-sao-paulo-especialista-inteligencia-artificial.webp",
+          "width": 1200,
+          "height": 675
+        },
+        "image": [
+          { "@id": "https://consultorseosp.com.br/#image-hero-ia" },
+          { "@id": "https://consultorseosp.com.br/#image-metodo-entity-first" }
+        ],
+        "description": "Consultoria de SEO Semântico (Entity-First), Generative Engine Optimization (GEO) e Arquitetura Multi-Cloud para empresas B2B e e-commerces em São Paulo — SP.",
         "telephone": "+5511918738164",
         "email": "contato@consultorseosp.com.br",
         "priceRange": "$$$",
         "hasMap": "https://www.google.com/maps?cid=consultorseosp",
-        "image": "https://consultorseosp.com.br/assets/og-image.png",
         "paymentAccepted": "Pix, Cartão de crédito, Boleto bancário, Transferência",
         "currenciesAccepted": "BRL",
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-            "opens": "08:00",
-            "closes": "18:00"
-          }
-        ],
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Av. Paulista, 1000 - Bela Vista",
+          "streetAddress": "Avenida Paulista, Bela Vista",
           "addressLocality": "São Paulo",
           "addressRegion": "SP",
           "postalCode": "01310-100",
@@ -90,62 +83,130 @@
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "-23.5614",
-          "longitude": "-46.6559"
+          "latitude": "-23.5615",
+          "longitude": "-46.6560"
         },
-        "areaServed": [
-          {"@type": "City", "name": "São Paulo"},
-          {"@type": "State", "name": "São Paulo"},
-          {"@type": "Country", "name": "Brasil"}
-        ],
+        "founder": {
+          "@id": "https://consultorseosp.com.br/#specialist"
+        },
         "knowsAbout": [
           "https://www.wikidata.org/wiki/Q180711",
-          "https://www.wikidata.org/wiki/Q11660",
-          "https://www.wikidata.org/wiki/Q1142726",
-          "https://www.wikidata.org/wiki/Q184199",
-          "https://www.wikidata.org/wiki/Q648625"
+          "https://www.wikidata.org/wiki/Q33002955",
+          "https://www.wikidata.org/wiki/Q54837",
+          "https://www.wikidata.org/wiki/Q816826",
+          "https://www.wikidata.org/wiki/Q115305900",
+          "https://www.wikidata.org/wiki/Q6108942"
         ],
-        "sameAs": [
+        "areaServed": [
+          { "@type": "City", "name": "São Paulo", "sameAs": "https://www.wikidata.org/wiki/Q174" },
+          { "@type": "City", "name": "Barueri", "sameAs": "https://www.wikidata.org/wiki/Q504556" },
+          { "@type": "City", "name": "Campinas", "sameAs": "https://www.wikidata.org/wiki/Q171617" },
+          { "@type": "City", "name": "Jundiaí", "sameAs": "https://www.wikidata.org/wiki/Q193689" },
+          { "@type": "City", "name": "São José dos Campos", "sameAs": "https://www.wikidata.org/wiki/Q191642" },
+          { "@type": "State", "name": "São Paulo", "sameAs": "https://www.wikidata.org/wiki/Q175" }
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          }
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://consultorseosp.com.br/#specialist",
+        "name": "Sérgio Melo — Arquiteto Sênior de SEO Semântico & IA",
+        "jobTitle": "Arquiteto de SEO Semântico, GEO e Automação de Agentes de IA",
+        "worksFor": {
+          "@id": "https://consultorseosp.com.br/#organization"
+        },
+        "knowsAbout": [
           "https://www.wikidata.org/wiki/Q180711",
-          "https://www.wikidata.org/wiki/Q11660",
-          "https://www.wikidata.org/wiki/Q1142726",
-          "https://www.wikidata.org/wiki/Q184199",
-          "https://www.wikidata.org/wiki/Q648625",
-          "http://consultorseosp-hub.s3-website-sa-east-1.amazonaws.com",
-          "https://consultorseohub.z15.web.core.windows.net",
-          "https://consultorseosp.com.br/",
-          "https://github.com/consultorseosp",
-          "https://www.linkedin.com/company/consultorseosp"
-        ],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Catálogo de Serviços de Especialista em SEO & Agentes de IA",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "SEO Semântico Entity-First & Brand ID",
-                "description": "Consultoria avançada de SEO, Brand Hubs na nuvem AWS S3, conexão com Wikidata e dominação de Google AI Overviews."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Desenvolvimento de Agentes de IA & MCP",
-                "description": "Criação de sistemas agênticos multi-agentes autônomos para automação de processos, auditoria e operações corporativas."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Automações de Processos com Playwright & Python",
-                "description": "Robôs e crawlers de extração, sincronização de dados e eliminação de tarefas manuais em produção."
-              }
-            }
-          ]
+          "https://www.wikidata.org/wiki/Q33002955",
+          "https://www.wikidata.org/wiki/Q115305900"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://consultorseosp.com.br/#website",
+        "name": "Consultor SEO SP",
+        "alternateName": ["Consultor SEO SP", "consultorseosp.com.br", "Consultor SEO Agentes de IA"],
+        "url": "https://consultorseosp.com.br/",
+        "inLanguage": "pt-BR",
+        "publisher": {
+          "@id": "https://consultorseosp.com.br/#organization"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://consultorseosp.com.br/#image-hero-ia",
+        "contentUrl": "https://consultorseosp.com.br/assets/img/consultor-seo-sao-paulo-especialista-inteligencia-artificial.webp",
+        "url": "https://consultorseosp.com.br/",
+        "name": "Consultor SEO em São Paulo Especialista em Inteligência Artificial e GEO",
+        "caption": "Arquitetura de SEO Semântico Entity-First, Grafo de Conhecimento e Otimização para Motores Generativos (GEO) em São Paulo - SP.",
+        "width": 1200,
+        "height": 675,
+        "license": "https://consultorseosp.com.br/licenca-midia.html",
+        "acquireLicensePage": "https://consultorseosp.com.br/contato.html",
+        "creditText": "Consultor SEO SP — Engenharia Entity-First",
+        "copyrightNotice": "© 2026 Consultor SEO SP - Todos os direitos reservados",
+        "creator": {
+          "@type": "Organization",
+          "@id": "https://consultorseosp.com.br/#organization",
+          "name": "Consultor SEO SP",
+          "url": "https://consultorseosp.com.br/"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "@id": "https://consultorseosp.com.br/#organization",
+          "name": "Consultor SEO SP",
+          "url": "https://consultorseosp.com.br/"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Avenida Paulista, São Paulo - SP",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-23.5615",
+            "longitude": "-46.6560"
+          }
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://consultorseosp.com.br/#image-metodo-entity-first",
+        "contentUrl": "https://consultorseosp.com.br/assets/img/consultor-seo-sp-metodo-entity-first-automacao-agentes.webp",
+        "url": "https://consultorseosp.com.br/",
+        "name": "Método Entity-First e Automação com Agentes de IA em São Paulo",
+        "caption": "Metodologia Entity-First, modelagem de Grafo de Conhecimento e aceleração orgânica sem depender de anúncios pagos.",
+        "width": 1200,
+        "height": 675,
+        "license": "https://consultorseosp.com.br/licenca-midia.html",
+        "acquireLicensePage": "https://consultorseosp.com.br/contato.html",
+        "creditText": "Consultor SEO SP — Engenharia Entity-First",
+        "copyrightNotice": "© 2026 Consultor SEO SP - Todos os direitos reservados",
+        "creator": {
+          "@type": "Organization",
+          "@id": "https://consultorseosp.com.br/#organization",
+          "name": "Consultor SEO SP",
+          "url": "https://consultorseosp.com.br/"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "@id": "https://consultorseosp.com.br/#organization",
+          "name": "Consultor SEO SP",
+          "url": "https://consultorseosp.com.br/"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Avenida Paulista, São Paulo - SP",
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-23.5615",
+            "longitude": "-46.6560"
+          }
         }
       },
       {
@@ -166,26 +227,26 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Por que o Consultor SEO SP não desenvolve sites em WordPress?",
+            "name": "Qual é a diferença entre um consultor de SEO e uma agência de marketing digital em SP?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "O WordPress tornou-se pesado, vulnerável a invasões e dependente de plugins que degradam a velocidade (TTFB > 1000ms). Nós construímos infraestruturas estáticas ultrarrápidas (Jamstack na AWS S3), onde o tempo de carregamento é inferior a 50ms, a pontuação no Google Core Web Vitals é 100/100 e a segurança é absoluta."
+              "text": "Um consultor sênior de SEO foca em engenharia profunda, arquitetura de dados estruturados e autoridade de entidade. Agências tradicionais costumam terceirizar serviços para juniores e empurrar pacotes genéricos de posts que não geram conversão real."
             }
           },
           {
             "@type": "Question",
-            "name": "O que são Agentes de IA e o protocolo MCP aplicados aos negócios?",
+            "name": "Como a inteligência artificial afeta o posicionamento da minha empresa no Google?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Diferente de chats comuns de IA (como ChatGPT básico), os Agentes de IA possuem ferramentas (tools), memória contextual e autonomia para executar tarefas no mundo real: navegar na web, minerar dados com Playwright, atualizar bancos de dados e orquestrar fluxos através do Model Context Protocol (MCP)."
+              "text": "O Google utiliza IA (MUM, Gemini e AI Overviews) para entender entidades e intenção direta em vez de meras palavras-chave. Nossa consultoria prepara o seu domínio com arquivos /llms.txt e Grafo de Conhecimento para ser citado como fonte primária por mecanismos de busca e LLMs."
             }
           },
           {
             "@type": "Question",
-            "name": "Como a metodologia Entity-First quebra a Sandbox do Google em até 30 dias?",
+            "name": "Em quanto tempo os resultados orgânicos começam a aparecer?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "O algoritmo do Google impõe a Sandbox para domínios novos porque ainda não confia em palavras-chave soltas (strings). Nossa metodologia cria uma Certidão de Nascimento Digital ancorada no Wikidata, no Google Maps (CEK/CEGM) e em clusters na Amazon AWS S3, fazendo com que o Google reconheça a empresa imediatamente como uma Entidade Comercial Verificada."
+              "text": "Com a metodologia Entity-First e indexação acelerada via IndexNow e Brand Hubs Multi-Cloud, os primeiros saltos de ranqueamento ocorrem tipicamente entre 30 e 60 dias, quebrando a lentidão da sandbox do Google."
             }
           }
         ]
@@ -193,32 +254,27 @@
       {
         "@type": "HowTo",
         "@id": "https://consultorseosp.com.br/#howto",
-        "name": "Como Funciona o Método de Dominação Orgânica e Agentes de IA do Consultor SEO SP",
-        "description": "Passo a passo de como estruturamos a autoridade tópica no Google e a automação de vendas corporativas para empresas.",
+        "name": "Como Implementar a Metodologia Entity-First no seu Site",
         "step": [
           {
             "@type": "HowToStep",
-            "position": 1,
-            "name": "Diagnóstico Cirúrgico & Auditoria de Entidade",
-            "text": "Mapeamento minucioso da situação técnica atual, intenção de busca comercial e remoção de qualquer fator que esteja derrubando a pontuação do site no algoritmo."
+            "name": "Auditoria de Entidade & Grafo",
+            "text": "Mapeamento das entidades da marca no Wikidata e identificação de lacunas semânticas."
           },
           {
             "@type": "HowToStep",
-            "position": 2,
-            "name": "Engenharia de Silos & Dominação Regional",
-            "text": "Construção de arquitetura em silos cobrindo todas as cidades e termos de alta conversão sem canibalização."
+            "name": "Engenharia de Dados Estruturados",
+            "text": "Injeção de Schema JSON-LD canônico com nós Organization, Person e knowsAbout."
           },
           {
             "@type": "HowToStep",
-            "position": 3,
-            "name": "Conexão com Knowledge Graph & Brand Hub",
-            "text": "Validação da marca como Entidade Oficial perante o Google através de Brand Hub na nuvem AWS S3, dados estruturados Schema e Wikidata."
+            "name": "Descoberta para Agentes de IA",
+            "text": "Configuração da superfície agêntica com /llms.txt e espelhos em Markdown /agent-md/."
           },
           {
             "@type": "HowToStep",
-            "position": 4,
-            "name": "Implementação de Agentes de IA Autônomos",
-            "text": "Ativação de sistemas agênticos para atendimento 24/7, nutrição de leads e automação de processos repetitivos."
+            "name": "Aceleração Multi-Cloud",
+            "text": "Distribuição de autoridade em Brand Hubs (AWS S3 + Azure) com travas canônicas anti-canibalização."
           }
         ]
       }
@@ -243,7 +299,9 @@
         <li><a href="#simulador">Simulador</a></li>
         <li><a href="#comparativo">Comparativo 2026</a></li>
         <li><a href="#eeat">E-E-A-T</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#simulador">Simulador GEO</a></li>
+          <li><a href="/seo-entity-first-vs-metodos-tradicionais.html">Comparativo Metodologias</a></li>
+          <li><a href="#faq">FAQ</a></li>
       </ul>
       <a href="https://wa.me/5511918738164?text=Ol%C3%A1%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20de%20SEO%20Sem%C3%A2ntico%20e%20Agentes%20de%20IA." target="_blank" rel="noopener" class="nav-cta">
         <span>Falar no WhatsApp</span>
@@ -299,6 +357,29 @@
         </div>
 
         <!-- Declaração de Associação de Entidade (EAS) - 100 Palavras na 1ª Dobra -->
+                <div style="margin: 2rem auto 1.5rem; text-align: center; max-width: 960px;">
+          <figure class="consultorseo-media" itemscope itemtype="https://schema.org/ImageObject" style="margin: 0;">
+            <link itemprop="license" href="https://consultorseosp.com.br/termos-de-uso.html" />
+            <link itemprop="acquireLicensePage" href="https://consultorseosp.com.br/contato.html" />
+            <span itemprop="creator" itemscope itemtype="https://schema.org/Organization" style="display:none;"><span itemprop="name">Consultor SEO SP</span></span>
+            <img 
+              src="/assets/img/consultor-seo-sao-paulo-especialista-inteligencia-artificial.webp" 
+              alt="Consultor SEO em São Paulo especialista em SEO Semântico e Agentes de IA - Consultor SEO SP" 
+              title="Consultoria de SEO e Automação com Inteligência Artificial em São Paulo - Consultor SEO SP"
+              width="1200" 
+              height="675" 
+              loading="eager" 
+              fetchpriority="high" 
+              decoding="async"
+              itemprop="contentUrl"
+              style="width: 100%; height: auto; border-radius: 16px; border: 1px solid rgba(56, 189, 248, 0.35); box-shadow: 0 15px 35px rgba(0,0,0,0.5);"
+            />
+            <figcaption itemprop="caption" style="font-size: 0.85rem; color: #94a3b8; margin-top: 0.75rem; text-align: center;">
+              <strong>Consultor SEO em São Paulo:</strong> Engenharia de SEO Semântico (Entity-First), Brand Hub Multi-Cloud e automação com agentes autônomos de IA para empresas B2B.
+            </figcaption>
+          </figure>
+        </div>
+
         <div class="eas-banner">
           <span class="eas-tag">Posicionamento Oficial de Mercado</span>
           <p class="eas-text">
@@ -499,63 +580,104 @@
               <p class="step-desc">Acompanhamos métricas reais de vendas e fechamento, refinando continuamente as estratégias para consolidar sua liderança orgânica definitiva.</p>
             </div>
           </div>
+          <div style="margin: 2.5rem 0 1rem; text-align: center;">
+            <img 
+              src="/assets/img/consultor-seo-sp-diagrama-arquitetura-brand-hub-multicloud.svg" 
+              alt="Diagrama de Arquitetura Brand Hub Multi-Cloud e Agentes de IA - Consultor SEO SP" 
+              title="Teia Multi-Cloud e Metodologia Entity-First - Consultor SEO SP"
+              width="1200" 
+              height="675" 
+              loading="lazy" 
+              decoding="async"
+              style="width: 100%; max-width: 900px; height: auto; border-radius: 16px; border: 1px solid rgba(56, 189, 248, 0.3); box-shadow: 0 10px 30px rgba(0,0,0,0.4);"
+            />
+            <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 0.5rem;">Arquitetura em 4 pilares: EAS Semântico, Brand Hub Multi-Cloud (AWS + Azure), Superfície Agêntica e Navboost.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Simulador Interativo de Diagnóstico -->
-    <section id="simulador" style="padding: 60px 0;">
+        <!-- Simulador Interativo de Maturidade GEO & SEO Semântico (Navboost Widget) -->
+    <section id="simulador" style="padding: 70px 0; background: linear-gradient(180deg, rgba(15,23,42,0.85) 0%, rgba(30,58,138,0.3) 100%); border-top: 1px solid rgba(59,130,246,0.2); border-bottom: 1px solid rgba(59,130,246,0.2);">
       <div class="container">
-        <div class="simulator-box">
-          <div class="section-header" style="margin-bottom: 10px; text-align: left;">
-            <span class="section-tag">Ferramenta Interativa</span>
-            <h2 id="ferramenta-simulador" class="section-title" style="margin-bottom: 8px;">Simulador de Potencial: Vendas & Inteligência Artificial</h2>
-            <p class="section-desc" style="margin: 0;">Selecione o cenário da sua empresa e veja a estimativa de aceleração de resultados.</p>
+        <div class="simulator-box" style="background: rgba(15, 23, 42, 0.95); border: 2px solid #2563eb; border-radius: 16px; padding: 40px; box-shadow: 0 20px 40px -15px rgba(37,99,235,0.3);">
+          <div class="section-header" style="margin-bottom: 25px; text-align: left;">
+            <span class="section-tag" style="background: #2563eb; color: #fff; padding: 4px 12px; border-radius: 4px; font-weight: bold; font-size: 0.8rem; text-transform: uppercase;">
+              Diagnóstico Instantâneo em Tempo Real
+            </span>
+            <h2 id="ferramenta-simulador" class="section-title" style="font-size: 2.1rem; font-weight: 800; color: #fff; margin-top: 12px; margin-bottom: 8px;">
+              Simulador de Maturidade GEO & SEO Semântico (2026)
+            </h2>
+            <p class="section-desc" style="color: #94a3b8; font-size: 1.05rem; margin: 0;">
+              Avalie em 4 perguntas técnicas se o seu domínio está preparado para ser citado pelo Google AI Overviews, ChatGPT, Perplexity e Gemini.
+            </p>
           </div>
 
-          <div class="simulator-form">
-            <div class="sim-inputs">
+          <div class="simulator-form" style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 30px; align-items: start;">
+            <div class="sim-inputs" style="display: flex; flexDirection: column; gap: 18px;">
+              
               <div class="sim-input-group">
-                <label for="sim-setor" class="sim-label">1. Qual é o seu segmento de mercado?</label>
-                <select id="sim-setor" class="sim-select">
-                  <option value="Serviços Profissionais / B2B">Serviços Profissionais / B2B / Consultoria</option>
-                  <option value="SaaS & Tecnologia">SaaS, Software & Tecnologia</option>
-                  <option value="E-commerce & Varejo">E-commerce / Comércio Digital</option>
-                  <option value="Indústria & Fabricação">Indústria, Engenharia & Saneamento</option>
-                  <option value="Negócio Local / Franquia">Negócio Local / Serviços Especializados</option>
+                <label for="sim-q1" class="sim-label" style="display: block; font-weight: 600; color: #e2e8f0; margin-bottom: 6px;">
+                  1. Superfície para Agentes de IA (/llms.txt e /agent-md/)
+                </label>
+                <select id="sim-q1" class="sim-select" onchange="calcularMaturidadeGEO()" style="width: 100%; padding: 12px; background: #0f172a; border: 1px solid #334155; border-radius: 8px; color: #fff; font-size: 0.95rem;">
+                  <option value="0">Não possui ou desconhece o protocolo /llms.txt (0 pts)</option>
+                  <option value="5">Possui apenas robots.txt e sitemap padrão de 2018 (5 pts)</option>
+                  <option value="25" selected>Possui /llms.txt, /llms-full.txt e espelhos /agent-md/ (25 pts)</option>
                 </select>
               </div>
 
               <div class="sim-input-group">
-                <label for="sim-nivel" class="sim-label">2. Qual a situação do seu site atual?</label>
-                <select id="sim-nivel" class="sim-select">
-                  <option value="novo">Domínio novo ou projeto saindo do zero</option>
-                  <option value="estagnado">Site existente estagnado (tráfego não vira vendas)</option>
-                  <option value="avancado">Operação ativa buscando escala com agentes de IA</option>
+                <label for="sim-q2" class="sim-label" style="display: block; font-weight: 600; color: #e2e8f0; margin-bottom: 6px;">
+                  2. Dados Estruturados & Grafo de Entidades (Wikidata)
+                </label>
+                <select id="sim-q2" class="sim-select" onchange="calcularMaturidadeGEO()" style="width: 100%; padding: 12px; background: #0f172a; border: 1px solid #334155; border-radius: 8px; color: #fff; font-size: 0.95rem;">
+                  <option value="0">Sem dados estruturados JSON-LD (0 pts)</option>
+                  <option value="5">Plugin genérico (Yoast/RankMath) sem nós no Wikidata (5 pts)</option>
+                  <option value="25" selected>Grafo @graph com nós Organization, Person e Q-IDs Wikidata (25 pts)</option>
                 </select>
               </div>
 
               <div class="sim-input-group">
-                <label for="sim-meta" class="sim-label">3. Qual seu objetivo primário nos próximos 90 dias?</label>
-                <select id="sim-meta" class="sim-select">
-                  <option value="leads">Gerar leads qualificados com alta intenção de compra</option>
-                  <option value="automacao">Automatizar tarefas operacionais e cortar custos</option>
-                  <option value="autoridade">Blindagem de marca e liderança orgânica absoluta</option>
+                <label for="sim-q3" class="sim-label" style="display: block; font-weight: 600; color: #e2e8f0; margin-bottom: 6px;">
+                  3. Infraestrutura, Hospedagem e TTFB (Core Web Vitals)
+                </label>
+                <select id="sim-q3" class="sim-select" onchange="calcularMaturidadeGEO()" style="width: 100%; padding: 12px; background: #0f172a; border: 1px solid #334155; border-radius: 8px; color: #fff; font-size: 0.95rem;">
+                  <option value="0">Hospedagem compartilhada instável / TTFB > 1.2s (0 pts)</option>
+                  <option value="5">WordPress pesado com plugins de cache / TTFB > 600ms (5 pts)</option>
+                  <option value="25" selected>Jamstack Multi-Cloud (Hostinger + AWS S3 + Azure / TTFB &lt; 200ms) (25 pts)</option>
                 </select>
               </div>
+
+              <div class="sim-input-group">
+                <label for="sim-q4" class="sim-label" style="display: block; font-weight: 600; color: #e2e8f0; margin-bottom: 6px;">
+                  4. Google Imagens 2.0 & Licenciamento Search Console
+                </label>
+                <select id="sim-q4" class="sim-select" onchange="calcularMaturidadeGEO()" style="width: 100%; padding: 12px; background: #0f172a; border: 1px solid #334155; border-radius: 8px; color: #fff; font-size: 0.95rem;">
+                  <option value="0">JPEGs/PNGs comuns sem metadados (0 pts)</option>
+                  <option value="10">WebP com texto alt, mas sem EXIF/GPS nem licença (10 pts)</option>
+                  <option value="25" selected>WebP com GPS EXIF binário + Selo Licenciável no GSC (25 pts)</option>
+                </select>
+              </div>
+
             </div>
 
-            <div class="sim-result-card">
-              <div>
-                <span class="result-badge">Diagnóstico Estratégico em Tempo Real</span>
-                <div id="result-metric" class="result-metric">10.4x Leads</div>
-                <p id="result-explanation" class="result-explanation">
-                  Aceleração de autoridade com plataforma de alta velocidade e estruturação semântica para captação imediata de clientes qualificados.
-                </p>
+            <div class="sim-result-card" style="background: #1e293b; border: 1px solid #3b82f6; border-radius: 12px; padding: 28px; text-align: center;">
+              <span class="result-badge" style="background: #0284c7; color: #fff; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">
+                Score de IA & Grafo de Conhecimento
+              </span>
+              <div id="result-score" style="font-size: 3.5rem; font-weight: 900; color: #10b981; margin: 15px 0 5px 0; font-family: monospace;">
+                100 / 100
               </div>
+              <div id="result-status" style="font-weight: 700; font-size: 1.1rem; color: #38bdf8; margin-bottom: 12px;">
+                Maturidade Semântica Entity-First de Elite
+              </div>
+              <p id="result-explanation" style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.5; margin-bottom: 20px; text-align: left;">
+                Seu domínio atende a 100% dos critérios modernos de GEO (Generative Engine Optimization). Está blindado contra canibalização e apto a ser a principal recomendação em buscas por IA.
+              </p>
 
-              <a id="btn-send-whatsapp" href="https://wa.me/5511918738164" target="_blank" rel="noopener" class="btn-primary" style="justify-content: center;">
-                <span>Discutir Este Plano via WhatsApp</span>
+              <a id="btn-send-whatsapp" href="https://wa.me/5511918738164?text=Ol%C3%A1%2C+fiz+o+Simulado+de+Maturidade+GEO+no+site+e+tirei+100%2F100.+Gostaria+de+uma+auditoria+completa." target="_blank" rel="noopener" class="btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 14px; background: #2563eb; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 1rem;">
+                <span>Baixar Relatório via WhatsApp</span>
                 <span>💬</span>
               </a>
             </div>
@@ -563,6 +685,48 @@
         </div>
       </div>
     </section>
+
+    <script>
+    function calcularMaturidadeGEO() {
+      const q1 = parseInt(document.getElementById('sim-q1').value) || 0;
+      const q2 = parseInt(document.getElementById('sim-q2').value) || 0;
+      const q3 = parseInt(document.getElementById('sim-q3').value) || 0;
+      const q4 = parseInt(document.getElementById('sim-q4').value) || 0;
+      const total = q1 + q2 + q3 + q4;
+
+      const scoreEl = document.getElementById('result-score');
+      const statusEl = document.getElementById('result-status');
+      const descEl = document.getElementById('result-explanation');
+      const waBtn = document.getElementById('btn-send-whatsapp');
+
+      scoreEl.innerText = total + ' / 100';
+
+      let status = '';
+      let desc = '';
+      let cor = '#10b981';
+
+      if (total <= 35) {
+        status = '⚠️ Arquitetura Vulnerável (Invisível para IA)';
+        desc = 'Seu site está preso ao modelo de 2018. Não possui arquivos agênticos nem dados no Wikidata. Alto risco de supressão algorítmica pelo Google Helpful Content.';
+        cor = '#ef4444';
+      } else if (total <= 70) {
+        status = '⚙️ SEO Linear Convencional (Maturidade Média)';
+        desc = 'Você possui boa indexação tradicional, mas perde posições para concorrentes que usam Grafos de Conhecimento e hospedagem Multi-Cloud de alta velocidade.';
+        cor = '#f59e0b';
+      } else {
+        status = '🚀 Maturidade Semântica Entity-First de Elite';
+        desc = 'Parabéns! Sua arquitetura atende aos padrões de vanguarda: Grafo de Entidades, resposta ultra-rápida e descoberta nativa para agentes de Inteligência Artificial.';
+        cor = '#10b981';
+      }
+
+      scoreEl.style.color = cor;
+      statusEl.innerText = status;
+      descEl.innerText = desc;
+
+      const waText = encodeURIComponent('Olá Sérgio, fiz o Simulador de Maturidade GEO/SEO no site e tirei ' + total + '/100 (' + status + '). Gostaria de um diagnóstico detalhado para minha empresa.');
+      waBtn.href = 'https://wa.me/5511918738164?text=' + waText;
+    }
+    </script>
 
     <!-- Tabela Comparativa: Agências Tradicionais vs. Nossa Metodologia -->
     <section id="comparativo" style="padding: 60px 0;">
@@ -583,6 +747,11 @@
               </tr>
             </thead>
             <tbody>
+              <tr>
+                <td><strong>Metodologia de Ranqueamento</strong></td>
+                <td class="col-old">Métodos lineares manuais de 2018 (processos convencionais e fees de agências): repetição de strings e relatórios em PDF que demoram meses na Sandbox do Google.</td>
+                <td class="col-new">Método ENTITY-FIRST &amp; AGENTS: Entidades validadas no Wikidata, Brand Hub Multi-Cloud (AWS + Azure), quebra algorítmica da Sandbox em semanas e superfície para IAs generativas (llms.txt v2).</td>
+              </tr>
               <tr>
                 <td><strong>Objetivo do Tráfego</strong></td>
                 <td class="col-old">Relatórios cheios de visitas curiosas que nunca compram nada.</td>

@@ -95,7 +95,7 @@ def get_files_to_deploy():
 
         if os.path.isfile(full_path):
             ext = os.path.splitext(item)[1].lower()
-            if ext == ".txt" and item not in {"robots.txt", "llms.txt", "llms-full.txt"} and not item.startswith("tiktok"):
+            if ext == ".txt" and item not in {"robots.txt", "llms.txt", "llms-full.txt", "c03b8e216451475d9b6a1a3eb6633038.txt"} and not item.startswith("tiktok"):
                 continue
             if ext in VALID_EXTS or item in {".htaccess", "agent.md"}:
                 files_map[item] = full_path

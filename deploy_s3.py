@@ -1,3 +1,4 @@
+import re
 import os
 import mimetypes
 import boto3
@@ -93,7 +94,41 @@ for root, dirs, files in os.walk(BASE_DIR):
             "CacheControl": cache_control
         }
 
-        s3.upload_file(full_path, BUCKET, rel_path, ExtraArgs=extra_args)
+        user_metadata = {
+            "author": "Consultor SEO SP",
+            "geo-region": "Sao-Paulo-SP",
+            "entity": "Consultor-SEO-SP-Especialista-Agentes-IA"
+        }
+        if file.endswith(".html"):
+            with open(full_path, "r", encoding="utf-8") as f_html:
+                html_data = f_html.read()
+            if file == "index.html":
+                hub_canonical = f"http://{BUCKET}.s3-website-sa-east-1.amazonaws.com/"
+                html_data = re.sub(
+                    r'<link\s+rel=["\']canonical["\']\s+href=["\'][^"\']+["\']\s*/?>',
+                    f'<link rel="canonical" href="{hub_canonical}">',
+                    html_data
+                )
+            else:
+                canonical_target = f"https://consultorseosp.com.br/{rel_path}"
+                html_data = re.sub(
+                    r'<link\s+rel=["\']canonical["\']\s+href=["\'][^"\']+["\']\s*/?>',
+                    f'<link rel="canonical" href="{canonical_target}">',
+                    html_data
+                )
+            body_bytes = html_data.encode("utf-8")
+        else:
+            with open(full_path, "rb") as f_bin:
+                body_bytes = f_bin.read()
+
+        s3.put_object(
+            Bucket=BUCKET,
+            Key=rel_path,
+            Body=body_bytes,
+            ContentType=content_type,
+            CacheControl=cache_control,
+            Metadata=user_metadata
+        )
         uploaded += 1
 
 print(f"[SUCESSO] Total de {uploaded} arquivos sincronizados com o bucket {BUCKET}!")

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://consultorseosp.com.br/</loc>
+    <image:image>
+      <image:loc>https://consultorseosp.com.br/assets/img/consultor-seo-sao-paulo-especialista-inteligencia-artificial.webp</image:loc>
+      <image:title>Consultor SEO em São Paulo especialista em SEO Semântico e Agentes de IA</image:title>
+      <image:caption>Consultoria de SEO Avançado e automação com agentes autônomos de Inteligência Artificial em São Paulo SP.</image:caption>
+      <image:geo_location>São Paulo, SP, Brasil</image:geo_location>
+      <image:license>https://consultorseosp.com.br/licenca-midia.html</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://consultorseosp.com.br/assets/img/consultor-seo-sp-metodo-entity-first-automacao-agentes.webp</image:loc>
+      <image:title>Método Entity-First e Automação com Agentes de IA - Consultor SEO SP</image:title>
+      <image:caption>Metodologia de engenharia de entidades, Brand Hub Multi-Cloud e aceleração orgânica sem depender de anúncios.</image:caption>
+      <image:geo_location>São Paulo, SP, Brasil</image:geo_location>
+      <image:license>https://consultorseosp.com.br/licenca-midia.html</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://consultorseosp.com.br/assets/img/consultor-seo-sp-diagrama-arquitetura-brand-hub-multicloud.svg</image:loc>
+      <image:title>Diagrama de Arquitetura Brand Hub Multi-Cloud e Agentes de IA - Consultor SEO SP</image:title>
+      <image:caption>Infraestrutura em 4 pilares: EAS Semântico, Brand Hub Multi-Cloud (AWS + Azure), Superfície llms.txt e Navboost.</image:caption>
+      <image:geo_location>São Paulo, SP, Brasil</image:geo_location>
+      <image:license>https://consultorseosp.com.br/licenca-midia.html</image:license>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://consultorseosp.com.br/seo-entity-first-vs-metodos-tradicionais.html</loc>
+    <image:image>
+      <image:loc>https://consultorseosp.com.br/assets/img/consultor-seo-sp-metodo-entity-first-automacao-agentes.webp</image:loc>
+      <image:title>Comparativo Método Entity-First vs SEO Tradicional em São Paulo</image:title>
+      <image:caption>Tabela comparativa técnica entre SEO Linear de 2018 e Engenharia Entity-First 2026.</image:caption>
+      <image:geo_location>São Paulo, SP, Brasil</image:geo_location>
+      <image:license>https://consultorseosp.com.br/licenca-midia.html</image:license>
+    </image:image>
+  </url>
+</urlset>

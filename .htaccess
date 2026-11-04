@@ -33,7 +33,7 @@ Options -Indexes
 </FilesMatch>
 
 # Permitir acesso público explícito aos arquivos agênticos e de validação
-<FilesMatch "^(robots\.txt|llms\.txt|llms-full\.txt|agent\.md|humans\.txt|sitemap\.xml|google.*\.html|tiktok.*)$">
+<FilesMatch "^(robots\.txt|llms\.txt|llms-full\.txt|agent\.md|humans\.txt|sitemap\.xml|sitemap-images\.xml|google.*\.html|tiktok.*|c03b8e216451475d9b6a1a3eb6633038\.txt)$">
   Order allow,deny
   Allow from all
 </FilesMatch>

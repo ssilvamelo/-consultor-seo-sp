@@ -6,6 +6,7 @@
 - [Especialista em SEO & Automação com Agentes de IA em São Paulo](https://consultorseosp.com.br/agent-md/index.md): Consultor SEO SP — Especialista em SEO e automação com agentes autônomos de Inteligência Artificial em São Paulo. Foco em tráfego qualificado e conversão de vendas.…
 
 ## Blog e guias técnicos
+- [SEO Entity-First vs. Métodos Tradicionais (BASE, RIC & Agências)](https://consultorseosp.com.br/agent-md/seo-entity-first-vs-metodos-tradicionais.md): Comparativo técnico detalhado: Por que o Método Entity-First e GEO (2026) supera métodos lineares de 2018 (Método BASE, Método RIC) no Google e em agentes de IA.
 - [Artigos & Análises Estratégicas](https://consultorseosp.com.br/agent-md/blog.md): Artigos técnicos, guias e análises sobre SEO Semântico, arquitetura Jamstack, Google AI Overviews e automação com agentes autônomos de Inteligência Artificial.
 - [Quanto Custa um Consultor de SEO em São Paulo? Valores Reais e Modelos de Contrato](https://consultorseosp.com.br/agent-md/blog-quanto-custa-consultor-seo-sp.md): Descubra a tabela real de preços para contratar um consultor de SEO em São Paulo em 2026. Entenda custos por hora, fee mensal, escopo técnico e o ROI esperado para…
 - [Google AI Overviews e Modo IA: Como Sua Empresa Pode Dominar as Respostas da IA](https://consultorseosp.com.br/agent-md/blog-google-ai-overviews-como-funciona.md): Guia prático para qualificar sua empresa para o Google AI Overviews e buscas generativas. Diretivas de robôs, autoridade de entidade e dados estruturados avançados.

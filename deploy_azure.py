@@ -5,6 +5,7 @@ Consultor SEO SP | Brand Hub na Nuvem da Microsoft
 
 import os
 import sys
+import re
 import mimetypes
 from dotenv import dotenv_values
 from azure.storage.blob import BlobServiceClient, ContentSettings
@@ -107,7 +108,7 @@ def run_deploy():
 
         if os.path.isfile(full_path):
             ext = os.path.splitext(item)[1].lower()
-            if ext == ".txt" and item not in {"robots.txt", "llms.txt", "llms-full.txt"}:
+            if ext == ".txt" and item not in {"robots.txt", "llms.txt", "llms-full.txt", "tiktok-developers-site-verification.txt", "c03b8e216451475d9b6a1a3eb6633038.txt"}:
                 continue
             if ext in VALID_EXTS or item == ".htaccess":
                 files_to_deploy[item] = full_path
@@ -139,8 +140,29 @@ def run_deploy():
 
         blob_client = container_client.get_blob_client(blob_name)
 
-        with open(local_path, "rb") as data:
-            blob_client.upload_blob(data, overwrite=True, content_settings=content_settings)
+        if blob_name.endswith(".html"):
+            with open(local_path, "r", encoding="utf-8") as f:
+                html_data = f.read()
+            if blob_name == "index.html":
+                # Azure Brand Hub self-canonical
+                html_data = re.sub(
+                    r'<link\s+rel=["\']canonical["\']\s+href=["\'][^"\']+["\']\s*/?>',
+                    f'<link rel="canonical" href="https://{account_name}.z15.web.core.windows.net/">',
+                    html_data
+                )
+            else:
+                # Forçar Canonical Cross-Domain de volta ao Money Site na Hostinger
+                canonical_target = f"https://consultorseosp.com.br/{blob_name}"
+                html_data = re.sub(
+                    r'<link\s+rel=["\']canonical["\']\s+href=["\'][^"\']+["\']\s*/?>',
+                    f'<link rel="canonical" href="{canonical_target}">',
+                    html_data
+                )
+            raw_bytes = html_data.encode("utf-8")
+            blob_client.upload_blob(raw_bytes, overwrite=True, content_settings=content_settings)
+        else:
+            with open(local_path, "rb") as data:
+                blob_client.upload_blob(data, overwrite=True, content_settings=content_settings)
 
         uploaded += 1
         total_bytes += file_size
