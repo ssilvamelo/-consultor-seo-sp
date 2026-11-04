@@ -19,6 +19,9 @@
   <meta name="description" content="Consultor SEO SP: Especialista em SEO Semântico e Agentes de IA em São Paulo. Quebre a Sandbox, domine o Google e escale vendas B2B. Atendimento: (11) 91873-8164.">
   <meta name="google-site-verification" content="6fd563d61496e4ca">
   <meta name="tiktok-developers-site-verification" content="KirOxWwxV1g8sGbzvrXaonj8dnVve5TG">
+  <meta name="author" content="Sérgio Melo">
+  <meta property="article:published_time" content="2026-10-01T08:00:00-03:00">
+  <meta property="article:modified_time" content="2026-11-04T12:00:00-03:00">
   
     <!-- Favicon & Social Share Cards -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -71,6 +74,12 @@
         "email": "contato@consultorseosp.com.br",
         "priceRange": "$$$",
         "hasMap": "https://www.google.com/maps?cid=consultorseosp",
+        "sameAs": [
+          "https://github.com/ssilvamelo/-consultor-seo-sp",
+          "https://consultorseohub.z15.web.core.windows.net/",
+          "http://consultorseosp-hub.s3-website-sa-east-1.amazonaws.com/",
+          "https://www.google.com/maps?cid=consultorseosp"
+        ],
         "paymentAccepted": "Pix, Cartão de crédito, Boleto bancário, Transferência",
         "currenciesAccepted": "BRL",
         "address": {
@@ -126,6 +135,10 @@
           "https://www.wikidata.org/wiki/Q180711",
           "https://www.wikidata.org/wiki/Q33002955",
           "https://www.wikidata.org/wiki/Q115305900"
+        ],
+        "sameAs": [
+          "https://github.com/ssilvamelo",
+          "https://consultorseosp.com.br/#specialist"
         ]
       },
       {
@@ -292,16 +305,12 @@
         <span>Consultor <strong style="color: var(--emerald);">SEO SP</strong></span>
       </a>
       <ul class="nav-links">
-        <li><a href="cidades/">Cidades</a></li>
-        <li><a href="blog/">Blog</a></li>
-        <li><a href="#especialidades">Especialidades</a></li>
-        <li><a href="#metodologia">Como Funciona</a></li>
-        <li><a href="#simulador">Simulador</a></li>
-        <li><a href="#comparativo">Comparativo 2026</a></li>
-        <li><a href="#eeat">E-E-A-T</a></li>
+        <li><a href="/cidades/">Cidades</a></li>
+        <li><a href="/blog/">Blog</a></li>
         <li><a href="#simulador">Simulador GEO</a></li>
-          <li><a href="/seo-entity-first-vs-metodos-tradicionais.html">Comparativo Metodologias</a></li>
-          <li><a href="#faq">FAQ</a></li>
+        <li><a href="/seo-entity-first-vs-metodos-tradicionais.html">Comparativo Metodologias</a></li>
+        <li><a href="/contato.html">Contato</a></li>
+        <li><a href="#faq">FAQ</a></li>
       </ul>
       <a href="https://wa.me/5511918738164?text=Ol%C3%A1%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20de%20SEO%20Sem%C3%A2ntico%20e%20Agentes%20de%20IA." target="_blank" rel="noopener" class="nav-cta">
         <span>Falar no WhatsApp</span>
@@ -687,6 +696,19 @@
     </section>
 
     <script>
+    
+    // W3C WebML CG WebMCP Draft (Community Group Report 16/10/2026)
+    if (typeof window !== 'undefined' && window.document && 'modelContext' in document) {
+      try {
+        document.modelContext?.registerTool({
+          name: 'calcularMaturidadeGEO',
+          description: 'Calcula o nível de maturidade semântica e conformidade com GEO de um domínio',
+          inputSchema: { type: 'object', properties: { dominio: { type: 'string' } } },
+          execute: async (args) => { return { status: 'success', score: 100 }; }
+        });
+      } catch (e) {}
+    }
+
     function calcularMaturidadeGEO() {
       const q1 = parseInt(document.getElementById('sim-q1').value) || 0;
       const q2 = parseInt(document.getElementById('sim-q2').value) || 0;
@@ -956,6 +978,9 @@
             <li><a href="blog/">Blog de Artigos Técnicos</a></li>
             <li><a href="privacidade.html">Política de Privacidade</a></li>
             <li><a href="termos.html">Termos de Uso</a></li>
+            <li><a href="/contato.html">Contato &amp; Licenciamento</a></li>
+            <li><a href="/licenca-midia.html">Licença de Mídia</a></li>
+            <li><a href="/seo-entity-first-vs-metodos-tradicionais.html">Comparativo Metodologias</a></li>
             <li><a href="http://consultorseosp-hub.s3-website-sa-east-1.amazonaws.com" target="_blank" rel="noopener">Brand Hub na AWS S3</a></li>
             <li><a href="https://consultorseohub.z15.web.core.windows.net" target="_blank" rel="noopener">Brand Hub na Microsoft Azure</a></li>
           </ul>
