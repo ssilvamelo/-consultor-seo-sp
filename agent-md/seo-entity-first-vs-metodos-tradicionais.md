@@ -1,8 +1,8 @@
 # SEO Entity-First vs. Métodos Tradicionais (BASE, RIC & Agências)
 
-> URL Canônica: https://consultorseosp.com.br/seo-entity-first-vs-metodos-tradicionais.html
-> Autor: Sérgio Melo — Arquiteto Sênior de SEO Semântico & IA
-> Entidade: Consultor SEO SP (São Paulo - SP)
+> URL Canônica: https://consultorseosp.com.br/seo-entity-first-vs-metodos-tradicionais.html  
+> Autor: Sérgio Melo — Arquiteto Sênior de SEO Semântico & IA  
+> Entidade: Consultor SEO SP (São Paulo - SP)  
 
 ## Resumo Executivo
 Comparativo técnico entre o paradigma de Web Semântica / Entidades (2026) e as metodologias lineares tradicionais do mercado brasileiro (Método BASE, Método RIC e agências convencionais).

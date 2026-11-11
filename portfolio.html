@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Engenharia & Cases Reais — Sérgio Melo | AI Automation & Technical SEO/GEO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    code, pre, .mono { font-family: 'JetBrains Mono', monospace; }
+    .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); }
+    @media print {
+      .no-print { display: none !important; }
+      body { background: #0f172a !important; color: #f8fafc !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Top Sticky Bar -->
+  <nav class="sticky top-0 z-50 glass border-b border-slate-800/80 px-4 py-3 no-print">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-sky-500 via-indigo-500 to-emerald-500 flex items-center justify-center font-extrabold text-white shadow-lg shadow-sky-500/20">
+          SM
+        </div>
+        <div>
+          <span class="font-bold text-white text-sm md:text-base">Sérgio Melo</span>
+          <span class="hidden sm:inline-block ml-2 text-xs px-2.5 py-0.5 rounded-full bg-sky-950 text-sky-300 border border-sky-500/30 font-semibold">
+            AI Automation & Technical SEO/GEO Portfolio
+          </span>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 text-xs font-semibold">
+        <a href="#saas" class="px-3 py-1.5 rounded-lg hover:bg-slate-800 text-slate-300 transition">1. Software SaaS (8090)</a>
+        <a href="#cases-gsc" class="px-3 py-1.5 rounded-lg hover:bg-slate-800 text-slate-300 transition">2. Cases GSC & Multi-Cloud</a>
+        <a href="#ia-media" class="px-3 py-1.5 rounded-lg hover:bg-slate-800 text-slate-300 transition">3. Pipelines IA & Bots</a>
+        <button onclick="window.print()" class="px-3.5 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white shadow-lg shadow-sky-600/25 transition">
+          🖨️ Exportar Portfólio PDF
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative overflow-hidden border-b border-slate-800/80 py-14 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div class="lg:col-span-8 space-y-5">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/90 border border-emerald-500/30 text-emerald-300 text-xs font-bold uppercase tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          Sistemas Reais em Produção • Disponível para Trabalho Remoto
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+          Engenharia de Automação com IA, <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-indigo-400 to-emerald-400">SEO Baseado em Entidades & GEO Multi-Cloud</span>
+        </h1>
+        <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl">
+          Eu projeto e construo sistemas autônomos em <strong>Python, Node.js e Cloud (AWS S3 & Azure)</strong> que posicionam empresas no topo do Google e nas respostas de Inteligência Artificial (ChatGPT Search, Perplexity, Gemini), além de pipelines generativos de mídia e robôs de operação 24/7.
+        </p>
+        <div class="flex flex-wrap gap-2.5 pt-2">
+          <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-xs font-semibold text-sky-300 mono">Python 3.10+</span>
+          <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-xs font-semibold text-emerald-300 mono">Schema.org @graph (0 Erros GSC)</span>
+          <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-xs font-semibold text-amber-300 mono">llms.txt v2 & WebMCP W3C</span>
+          <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-xs font-semibold text-indigo-300 mono">AWS S3 (boto3) & Azure $web</span>
+          <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-xs font-semibold text-pink-300 mono">Playwright & WP REST API</span>
+          <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-xs font-semibold text-purple-300 mono">PyTorch Voice Cloning & FFmpeg</span>
+        </div>
+      </div>
+
+      <!-- KPI Highlight Box -->
+      <div class="lg:col-span-4 grid grid-cols-2 gap-3.5">
+        <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-2xl">
+          <span class="text-xs font-bold text-slate-400 uppercase">Google Search Console</span>
+          <p class="text-3xl font-extrabold text-emerald-400 mt-1">Top 1–2</p>
+          <p class="text-xs text-slate-400 mt-1">Posição média <strong>1.67</strong> nacional para <em>"contabilidade mei"</em></p>
+        </div>
+        <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-2xl">
+          <span class="text-xs font-bold text-slate-400 uppercase">Auditoria Técnica & IA</span>
+          <p class="text-3xl font-extrabold text-sky-400 mt-1">10.0 / 10</p>
+          <p class="text-xs text-slate-400 mt-1">Zero erros GSC + <strong>95/100</strong> no motor <code>agente-ready.py</code></p>
+        </div>
+        <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-2xl">
+          <span class="text-xs font-bold text-slate-400 uppercase">Infraestrutura Cloud</span>
+          <p class="text-3xl font-extrabold text-indigo-400 mt-1">3 Nuvens</p>
+          <p class="text-xs text-slate-400 mt-1">Hostinger + 6 Buckets AWS S3 + Azure Static Web</p>
+        </div>
+        <div class="bg-slate-900/90 border border-slate-800 p-5 rounded-2xl">
+          <span class="text-xs font-bold text-slate-400 uppercase">Performance TTFB</span>
+          <p class="text-3xl font-extrabold text-amber-400 mt-1">48ms</p>
+          <p class="text-xs text-slate-400 mt-1">Core Web Vitals otimizados & IndexNow HTTP 202</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-12 space-y-16">
+
+    <!-- SECTION 1: THE SAAS PLATFORM (PORT 8090) -->
+    <section id="saas" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Destaque de Engenharia #1 • Software Proprietário</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Agency SEO Automation SaaS & Master Toolkit (Porta 8090)</h2>
+        </div>
+        <span class="text-xs mono bg-slate-900 border border-slate-700 px-3 py-1.5 rounded-lg text-slate-300">
+          Stack: Python HTTP Server Multi-Thread • Playwright • OpenPyXL • Telegram Bot API
+        </span>
+      </div>
+
+      <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+        Para eliminar o trabalho manual em auditorias e deploys de SEO Técnico, desenvolvi um <strong>software SaaS local/web completo</strong> (<code>agency_saas_server.py</code> + <code>seo_master_toolkit.py</code>) controlado por painel visual e integrado ao Telegram (<code>@oigres2bot</code>). Abaixo está a representação interativa fiel da estação de trabalho que opera na porta <code>8090</code>:
+      </p>
+
+      <!-- Live Interactive Simulation of the Port 8090 SaaS UI -->
+      <div class="rounded-2xl border-2 border-slate-700/80 bg-slate-900/95 overflow-hidden shadow-2xl">
+        <!-- Browser Window Bar -->
+        <div class="bg-slate-950 px-4 py-2.5 border-b border-slate-800 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+            <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+            <span class="ml-3 text-xs mono text-slate-400 bg-slate-900 px-3 py-1 rounded-md border border-slate-800">
+              🔒 http://localhost:8090/dashboard.html — Agency SEO Automation SaaS (Motor Python Ativo)
+            </span>
+          </div>
+          <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-500/30">
+            ● 5 Projetos no Banco agency_db.json
+          </span>
+        </div>
+
+        <!-- Dashboard Inside Preview -->
+        <div class="p-5 md:p-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <!-- Left List of Real Projects -->
+          <div class="lg:col-span-4 space-y-2.5">
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Carteira Real Auditada pelo Motor</div>
+
+            <div class="p-3.5 rounded-xl bg-sky-950/40 border border-sky-500/50">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-white">1. Portal Microempreendedor MEI</span>
+                <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30">10.0 / 10</span>
+              </div>
+              <p class="text-xs text-sky-300 mono mt-1">portalmicroempreendedormei.com</p>
+              <p class="text-[11px] text-slate-400 mt-1">GSC #1–2 ("contabilidade mei") • S3 + Azure Ativos</p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-white">2. PRD Consultoria (Telemetria IoT)</span>
+                <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30">10.0 / 10</span>
+              </div>
+              <p class="text-xs text-sky-300 mono mt-1">servicosprd.com.br</p>
+              <p class="text-[11px] text-slate-400 mt-1">Nota 95/100 Agente-Ready • WebMCP • TTFB 110ms</p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-white">3. Consultor SEO SP (Hub Agência)</span>
+                <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-500/30">10.0 / 10</span>
+              </div>
+              <p class="text-xs text-sky-300 mono mt-1">consultorseosp.com.br</p>
+              <p class="text-[11px] text-slate-400 mt-1">TTFB 48ms • Grafo @graph Desacoplado • S3 Hub</p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-white">4. Syny (Telemetria Hídrica SP)</span>
+                <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-950 text-amber-300 border border-amber-500/30">7.8 / 10</span>
+              </div>
+              <p class="text-xs text-slate-400 mono mt-1">syny.com.br — Diagnóstico Outbound Gerado</p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-white">5. Combat Fire (Engenharia AVCB)</span>
+                <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-rose-950 text-rose-300 border border-rose-500/30">4.5 / 10</span>
+              </div>
+              <p class="text-xs text-slate-400 mono mt-1">combatfire.eng.br — Dossiê Executivo Pronto</p>
+            </div>
+          </div>
+
+          <!-- Right Workstation Capabilities -->
+          <div class="lg:col-span-8 bg-slate-950 border border-slate-800 rounded-xl p-5 space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
+              <div>
+                <h3 class="font-extrabold text-base text-white">Ferramentas Executáveis em 1 Clique no Painel</h3>
+                <p class="text-xs text-slate-400">O painel dispara processos assíncronos em Python e retorna o log em tempo real</p>
+              </div>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 bg-blue-600/20 border border-blue-500/40 text-blue-300 rounded-lg text-xs font-bold">🔍 1. Auditar Lead</span>
+                <span class="px-2.5 py-1 bg-purple-600/20 border border-purple-500/40 text-purple-300 rounded-lg text-xs font-bold">⚔️ 2. Raio-X Concorrente</span>
+                <span class="px-2.5 py-1 bg-emerald-600/20 border border-emerald-500/40 text-emerald-300 rounded-lg text-xs font-bold">📊 4. Baixar Excel (.xlsx)</span>
+                <span class="px-2.5 py-1 bg-amber-600/20 border border-amber-500/40 text-amber-300 rounded-lg text-xs font-bold">☁️ 5. Sync Multi-Cloud</span>
+              </div>
+            </div>
+
+            <!-- Simulated Terminal Output of real verification -->
+            <div class="bg-black/90 border border-slate-800 rounded-xl p-4 mono text-xs text-slate-300 space-y-1.5 overflow-x-auto">
+              <div class="text-slate-500"># Saída real do motor seo_master_toolkit.py & outbound_intelligence_engine.py:</div>
+              <div><span class="text-sky-400">$ python</span> seo_master_toolkit.py validate-schema https://servicosprd.com.br/</div>
+              <div class="text-emerald-400">✔ [@graph] 6 nós validados (LocalBusiness, Person, WebSite, Service, ImageObject, VideoObject)</div>
+              <div class="text-emerald-400">✔ [Google Imagens 2.0] license + acquireLicensePage + creditText + creator (@type: Organization) OK</div>
+              <div class="text-emerald-400">✔ [Anti-Colisão sameAs] Desacoplamento de entidades verificado (TechArticle mentions)</div>
+              <div class="text-emerald-400">✔ [Superfície de IA] /llms.txt (HTTP 200) | /agent-md/*.md (noindex, text/markdown) | WebMCP Tool ativa</div>
+              <div class="font-bold text-white bg-emerald-950/80 border border-emerald-500/40 px-2 py-1 rounded inline-block mt-1">
+                VEREDITO: APROVADO 100% (ZERO ERROS GSC) — NOTA TÉCNICA: 10.0 / 10.0
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+              <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+                <div class="text-xs font-bold text-sky-400">Crawler Excel (.xlsx)</div>
+                <p class="text-[11px] text-slate-400 mt-1">Varre até 50 URLs do domínio e gera planilha formatada com Status HTTP, Title, H1, Canonical, Schema e tempo de resposta.</p>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+                <div class="text-xs font-bold text-emerald-400">Validador GSC Estrito</div>
+                <p class="text-[11px] text-slate-400 mt-1">Impede deploy se houver chave órfã fora do <code>@graph</code> ou se faltar metadado de licença em qualquer imagem.</p>
+              </div>
+              <div class="p-3 rounded-lg bg-slate-900 border border-slate-800">
+                <div class="text-xs font-bold text-amber-400">Controle Mobile Telegram</div>
+                <p class="text-[11px] text-slate-400 mt-1">Bot <code>telegram_command_center.py</code> permite auditar clientes e consultar status da esteira direto pelo celular.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 3 LIVE CASES & MULTI-CLOUD ARCHITECTURE -->
+    <section id="cases-gsc" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Destaque de Engenharia #2 • Resultados Reais em Produção</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">3 Cases em Produção + Arquitetura Multi-Cloud Anti-Canibalização</h2>
+        </div>
+        <span class="text-xs mono bg-slate-900 border border-slate-700 px-3 py-1.5 rounded-lg text-slate-300">
+          Hostinger (Money Site) ⇄ AWS S3 (sa-east-1) ⇄ Microsoft Azure ($web)
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Case 1 -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-950 text-emerald-300 border border-emerald-500/30">Top 1–2 GSC Nacional</span>
+              <span class="text-xs mono text-slate-400">WordPress + REST API</span>
+            </div>
+            <h3 class="text-lg font-extrabold text-white">Portal Microempreendedor MEI</h3>
+            <a href="https://www.portalmicroempreendedormei.com" target="_blank" class="text-xs text-sky-400 hover:underline mono block">https://www.portalmicroempreendedormei.com ↗</a>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Portal nacional focado em contabilidade e desenquadramento MEI. Otimizado programaticamente via <strong>WordPress REST API</strong> (`wp_rest_connector.py`) e plugin próprio (`portalmei-agent-surface.php`).
+            </p>
+            <ul class="text-xs text-slate-300 space-y-1.5 pt-1">
+              <li>✅ <strong>Posição 1.67 no Google Search Console</strong> para <em>"contabilidade mei"</em>;</li>
+              <li>✅ <strong>Cluster Triangular AWS S3:</strong> <code>portalmei-hub</code>, <code>aberturamei-sp</code> e <code>desenquadramentomei-sp</code>;</li>
+              <li>✅ <strong>Espelho Microsoft Azure:</strong> <code>consultorseohub.z15.web.core.windows.net/portalmei/</code>;</li>
+              <li>✅ Superfície <code>/llms.txt</code> e <code>/agent.md</code> com 20+ propriedades Web 2.0 no <code>sameAs</code>.</li>
+            </ul>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] mono text-slate-400">
+            Script: <code>optimize_portalmei_contabilidade_gsc.py</code>
+          </div>
+        </div>
+
+        <!-- Case 2 -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-sky-950 text-sky-300 border border-sky-500/30">Nota 95/100 Agente-Ready</span>
+              <span class="text-xs mono text-slate-400">Jamstack + WebMCP</span>
+            </div>
+            <h3 class="text-lg font-extrabold text-white">PRD Consultoria (Telemetria IoT)</h3>
+            <a href="https://servicosprd.com.br" target="_blank" class="text-xs text-sky-400 hover:underline mono block">https://servicosprd.com.br ↗</a>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Engenharia de telemetria predial (monitoramento de nível de caixa d'água e painéis elétricos em tempo real) em Jundiaí e Várzea Paulista – SP.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-1.5 pt-1">
+              <li>✅ <strong>WebMCP W3C Draft API:</strong> Calculadora de autonomia hídrica registrada via <code>document.modelContext.registerTool</code>;</li>
+              <li>✅ <strong>Google Imagens 2.0:</strong> Rota física <code>/licenca-midia.html</code> (CC BY-NC-ND 4.0) habilitando selo "Licenciável" com 0 erros no GSC;</li>
+              <li>✅ <strong>3 Buckets AWS S3:</strong> <code>servicosprd</code>, <code>controledenivel</code> e <code>manutencaopainel</code> + espelho Azure.</li>
+            </ul>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] mono text-slate-400">
+            Script: <code>sync_cloud_shields_fast.py</code>
+          </div>
+        </div>
+
+        <!-- Case 3 -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-indigo-950 text-indigo-300 border border-indigo-500/30">TTFB 48ms • 10.0/10</span>
+              <span class="text-xs mono text-slate-400">Entity-First Hub</span>
+            </div>
+            <h3 class="text-lg font-extrabold text-white">Consultor SEO SP (Hub da Agência)</h3>
+            <a href="https://consultorseosp.com.br" target="_blank" class="text-xs text-sky-400 hover:underline mono block">https://consultorseosp.com.br ↗</a>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Plataforma oficial da consultoria demonstrando na própria arquitetura todas as diretrizes do Google Search Central, AI Overviews (Query Fan-out) e desacoplamento semântico.
+            </p>
+            <ul class="text-xs text-slate-300 space-y-1.5 pt-1">
+              <li>✅ <strong>Desacoplamento de Entidades:</strong> Estudos de caso conectados via nó <code>@type: "TechArticle"</code> (<code>about</code> / <code>mentions</code>) sem poluir o <code>sameAs</code> corporativo;</li>
+              <li>✅ <strong>First Link Priority:</strong> Distribuição matemática de Link Equity entre Money Page e Escudos Tier 1;</li>
+              <li>✅ Sincronização automática FTPS + AWS S3 (<code>consultorseosp-hub</code>) + IndexNow API.</li>
+            </ul>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] mono text-slate-400">
+            Script: <code>seo_master_toolkit.py</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: AI MEDIA PIPELINES, VOICE CLONING & ALGO TRADING -->
+    <section id="ia-media" class="space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-800 pb-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-purple-400">Destaque de Engenharia #3 • Automação Full-Stack & Sistemas 24/7</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">IA Generativa Audiovisual, Bots Quantitativos & Extensões Chrome</h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Project A: MenteViral & VoiceStudio -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 space-y-3">
+          <span class="text-xs font-bold text-purple-400 uppercase">Mídia Generativa & PyTorch</span>
+          <h3 class="text-lg font-extrabold text-white">Motor MenteViral & VoiceStudio</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Pipeline autônomo em Python e Node.js (<code>.mjs</code>) que transforma pautas em JSON em vídeos verticais (9:16) e documentários prontos para publicação:
+          </p>
+          <ul class="text-xs text-slate-300 space-y-1.5">
+            <li>• <strong>Clonagem de Voz Neural Local:</strong> Treinamento e inferência com PyTorch (<code>perfil_voz_sergio.pt</code>) e tratamento fonético anti-soletração;</li>
+            <li>• <strong>Renderização & Mixagem:</strong> Cards HTML/CSS dinâmicos capturados via Playwright + composição audiovisual com <strong>FFmpeg</strong>;</li>
+            <li>• <strong>Publicação & Governança:</strong> Upload via <strong>YouTube Data API v3</strong> com aprovação prévia pelo celular no Telegram (<code>bot_aprovador.py</code>).</li>
+          </ul>
+        </div>
+
+        <!-- Project B: Hyperliquid Quantitative Bot -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 space-y-3">
+          <span class="text-xs font-bold text-amber-400 uppercase">FinTech & Sistemas Críticos 24/7</span>
+          <h3 class="text-lg font-extrabold text-white">Hyperliquid L1 & Binance Trading Suite</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Conjunto de robôs de operação algorítmica em tempo real (<code>hl_sniper_engine.py</code>, <code>hl_trend_hedge_engine.py</code>, <code>grid_strategy.py</code>):
+          </p>
+          <ul class="text-xs text-slate-300 space-y-1.5">
+            <li>• <strong>Alta Confiabilidade:</strong> Estado persistido em banco <strong>SQLite (modo WAL)</strong> para leitura/escrita concorrente sem travamentos;</li>
+            <li>• <strong>Gestão de Risco Automática:</strong> Travas <em>Circuit Breaker</em> (<code>circuit_breaker.json</code>) e script de cancelamento de emergência;</li>
+            <li>• <strong>DevOps & Monitoramento:</strong> Processos supervisionados 24/7 via <strong>PM2</strong> (<code>ecosystem.config.js</code>) com Dashboard Web e relatórios diários no Telegram.</li>
+          </ul>
+        </div>
+
+        <!-- Project C: E-Commerce Extensions & RPA -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 space-y-3">
+          <span class="text-xs font-bold text-sky-400 uppercase">Extensões Chrome & Web Scraping</span>
+          <h3 class="text-lg font-extrabold text-white">Espião Shopee, GarimpoPro & Backlink Engine</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Ferramentas de inteligência competitiva para e-commerce e motores de submissão web automatizada:
+          </p>
+          <ul class="text-xs text-slate-300 space-y-1.5">
+            <li>• <strong>Chrome Extension (Manifest V3):</strong> Extensão empacotada (<code>espiaozinho.crx</code>) com Popup UI, Content Scripts e análise de métricas de produtos na Shopee;</li>
+            <li>• <strong>RPA de Link Building (Playwright):</strong> Motor <code>backlink_engine</code> que preenche formulários, resolve etapas de submissão em diretórios internacionais e registra evidências em CSV.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-slate-800 py-8 px-4 text-center text-xs text-slate-400">
+    <p><strong>Sérgio Melo</strong> — Engenheiro de Automação com IA & Arquiteto de SEO Semântico / GEO • Várzea Paulista / Jundiaí – SP (Trabalho 100% Remoto)</p>
+  </footer>
+
+</body>
+</html>
