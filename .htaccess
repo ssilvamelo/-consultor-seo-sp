@@ -16,6 +16,17 @@ DirectoryIndex index.html index.php
   # 1b. Forçar HTTPS (SSL)
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # SEO:SHORTLINKS:START — /whats, URLs sem .html e consolidação de páginas legais duplicadas
+  RewriteRule ^(whats|whatsapp|orcamento)/?$ https://wa.me/5511918738164?text=Ol%C3%A1!+Vim+pelo+site+consultorseosp.com.br+e+gostaria+de+um+diagn%C3%B3stico+de+SEO. [R=302,L,NE]
+  RewriteRule ^politica-de-privacidade\.html$ https://consultorseosp.com.br/privacidade.html [R=301,L]
+  RewriteRule ^termos-de-(uso|servico)\.html$ https://consultorseosp.com.br/termos.html [R=301,L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^([A-Za-z0-9_-]+)/?$ /$1.html [R=301,L]
+  # SEO:SHORTLINKS:END
+
 </IfModule>
 
 # 2. Desabilitar Listagem de Pastas e Diretórios
@@ -108,3 +119,11 @@ ServerSignature Off
 
 # 8. Página 404 Personalizada de Alta Conversão
 ErrorDocument 404 /404.html
+
+
+# Bloqueio de indexação para curriculo.html (Invisível nos buscadores)
+<IfModule mod_headers.c>
+  <FilesMatch "^curriculo\.html$">
+    Header set X-Robots-Tag "noindex, nofollow, noarchive"
+  </FilesMatch>
+</IfModule>

@@ -45,3 +45,9 @@
 - [consultorseosp-hub.s3-website-sa-east-1.amazonaws.com](http://consultorseosp-hub.s3-website-sa-east-1.amazonaws.com): Espelho/Brand Hub oficial da entidade.
 - [consultorseohub.z15.web.core.windows.net](https://consultorseohub.z15.web.core.windows.net): Espelho/Brand Hub oficial da entidade.
 - [github.com](https://github.com/consultorseosp): Espelho/Brand Hub oficial da entidade.
+
+## Entidade Fundadora: Sérgio Melo (Entity Home Oficial)
+- **Nome Canônico:** Sérgio Melo (`https://consultorseosp.com.br/#specialist`)
+- **Página Oficial (Entity Home):** https://consultorseosp.com.br/sergio-melo.html
+- **Atuação Executiva e Técnica:** Especialista em Brand Semântico (Entity-First), Inteligência Artificial e Programação; Fundador da **Consultor SEO SP** (`https://consultorseosp.com.br/`) e da **PRD Consultoria** (`https://servicosprd.com.br/`).
+- **Atuação como Palestrante:** Palestrante e comunicador de Inteligência Emocional e desbloqueio pessoal no YouTube (`https://www.youtube.com/@sergio_melo`), Instagram (`https://www.instagram.com/sergiomeloeusou/`), Threads (`https://www.threads.com/@sergiomeloeusou`) e Facebook (`https://www.facebook.com/ssilvamelo`).

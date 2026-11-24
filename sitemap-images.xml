@@ -35,4 +35,21 @@
       <image:license>https://consultorseosp.com.br/licenca-midia.html</image:license>
     </image:image>
   </url>
+  <url>
+    <loc>https://consultorseosp.com.br/sergio-melo.html</loc>
+    <image:image>
+      <image:loc>https://consultorseosp.com.br/assets/img/sergio-melo-retrato-oficial.webp</image:loc>
+      <image:title>Sérgio Melo — Especialista em Brand Semântico, IA, Programação e Palestrante</image:title>
+      <image:caption>Retrato oficial de Sérgio Melo, fundador da Consultor SEO SP e PRD Consultoria e palestrante de Inteligência Emocional.</image:caption>
+      <image:geo_location>São Paulo, SP, Brasil</image:geo_location>
+      <image:license>https://consultorseosp.com.br/licenca-midia.html</image:license>
+    </image:image>
+    <image:image>
+      <image:loc>https://consultorseosp.com.br/assets/img/sergio-melo-especialista-brand-ia-seo-palestrante.jpg</image:loc>
+      <image:title>Sérgio Melo — Arquiteto de IA, Brand e Palestrante</image:title>
+      <image:caption>Foto oficial de perfil de Sérgio Melo (@sergiomeloeusou / @sergio_melo).</image:caption>
+      <image:geo_location>São Paulo, SP, Brasil</image:geo_location>
+      <image:license>https://consultorseosp.com.br/licenca-midia.html</image:license>
+    </image:image>
+  </url>
 </urlset>
