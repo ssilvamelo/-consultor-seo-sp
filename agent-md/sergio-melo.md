@@ -11,6 +11,7 @@
 1. **Engenharia de Brand, SEO Semântico, GEO & IA/Programação (`Consultor SEO SP`):**
    - Site oficial: https://consultorseosp.com.br/
    - Portfólio técnico e cases: https://consultorseosp.com.br/portfolio.html
+   - LinkedIn oficial: https://www.linkedin.com/in/s%C3%A9rgio-m-aaa5a92b/
    - Código e repositórios abertos: https://github.com/ssilvamelo
 2. **Engenharia IoT & Telemetria Predial (`PRD Consultoria`):**
    - Site oficial: https://servicosprd.com.br/

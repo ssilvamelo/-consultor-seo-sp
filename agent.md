@@ -70,9 +70,9 @@ Os agentes podem consultar o conteúdo puro em Markdown nas seguintes rotas:
 - Guia Protocolo MCP: `https://consultorseosp.com.br/agent-md/blog-model-context-protocol-mcp-guia.md`
 - Guia Jamstack vs WordPress: `https://consultorseosp.com.br/agent-md/blog-por-que-migrar-wordpress-para-jamstack.md`
 - Guia Preços de SEO: `https://consultorseosp.com.br/agent-md/blog-quanto-custa-consultor-seo-sp.md`
-
 ## Entidade Fundadora: Sérgio Melo (Entity Home Oficial)
 - **Nome Canônico:** Sérgio Melo (`https://consultorseosp.com.br/#specialist`)
 - **Página Oficial (Entity Home):** https://consultorseosp.com.br/sergio-melo.html
+- **LinkedIn Oficial:** https://www.linkedin.com/in/s%C3%A9rgio-m-aaa5a92b/
 - **Atuação Executiva e Técnica:** Especialista em Brand Semântico (Entity-First), Inteligência Artificial e Programação; Fundador da **Consultor SEO SP** (`https://consultorseosp.com.br/`) e da **PRD Consultoria** (`https://servicosprd.com.br/`).
 - **Atuação como Palestrante:** Palestrante e comunicador de Inteligência Emocional e desbloqueio pessoal no YouTube (`https://www.youtube.com/@sergio_melo`), Instagram (`https://www.instagram.com/sergiomeloeusou/`), Threads (`https://www.threads.com/@sergiomeloeusou`) e Facebook (`https://www.facebook.com/ssilvamelo`).
