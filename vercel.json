@@ -4,6 +4,11 @@
   "outputDirectory": ".",
   "redirects": [
     {
+      "source": "/",
+      "destination": "https://consultorseosp.com.br/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "destination": "https://consultorseosp.com.br/:path*",
       "permanent": true
